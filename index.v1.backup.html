@@ -263,148 +263,6 @@
   .breadth-up { background:var(--green); display:flex; align-items:center; justify-content:center; font-size:10px; color:#000; font-weight:700; }
   .breadth-dn { background:var(--red); display:flex; align-items:center; justify-content:center; font-size:10px; color:#fff; font-weight:700; }
   .breadth-neu { background:var(--text3); display:flex; align-items:center; justify-content:center; font-size:10px; color:#fff; }
-
-  /* ── QUANT GRADE BADGES ── */
-  .grade { display:inline-flex; align-items:center; justify-content:center;
-    width:36px; height:36px; border-radius:6px; font-size:13px; font-weight:800;
-    border:1.5px solid; flex-shrink:0; }
-  .grade-Aplus  { background:rgba(0,212,161,.18); color:#00d4a1; border-color:rgba(0,212,161,.4); }
-  .grade-A      { background:rgba(0,212,161,.12); color:#00d4a1; border-color:rgba(0,212,161,.3); }
-  .grade-Aminus { background:rgba(5,150,105,.12); color:#059669; border-color:rgba(5,150,105,.3); }
-  .grade-Bplus  { background:rgba(59,130,246,.15); color:#3b82f6; border-color:rgba(59,130,246,.35); }
-  .grade-B      { background:rgba(59,130,246,.10); color:#3b82f6; border-color:rgba(59,130,246,.25); }
-  .grade-Bminus { background:rgba(96,165,250,.10); color:#60a5fa; border-color:rgba(96,165,250,.25); }
-  .grade-Cplus  { background:rgba(245,158,11,.12); color:#f59e0b; border-color:rgba(245,158,11,.3); }
-  .grade-C      { background:rgba(245,158,11,.10); color:#d97706; border-color:rgba(245,158,11,.25); }
-  .grade-Cminus { background:rgba(251,146,60,.10); color:#fb923c; border-color:rgba(251,146,60,.25); }
-  .grade-Dplus  { background:rgba(255,77,106,.10); color:#ff4d6a; border-color:rgba(255,77,106,.25); }
-  .grade-D      { background:rgba(239,68,68,.12); color:#ef4444; border-color:rgba(239,68,68,.3); }
-  .grade-F      { background:rgba(220,38,38,.15); color:#dc2626; border-color:rgba(220,38,38,.35); }
-  .grade-sm { width:28px; height:28px; font-size:11px; border-radius:4px; }
-
-  /* ── QUANT FACTOR CARD ── */
-  .qfactor { display:flex; align-items:center; gap:10px; padding:10px; background:var(--bg3);
-    border-radius:8px; border:1px solid var(--border); }
-  .qfactor-info { flex:1; }
-  .qfactor-name { font-size:11px; font-weight:600; color:var(--text); }
-  .qfactor-sub  { font-size:10px; color:var(--text3); margin-top:1px; }
-  .qfactor-bar  { height:3px; border-radius:2px; margin-top:5px; background:var(--bg4); overflow:hidden; }
-  .qfactor-fill { height:100%; border-radius:2px; }
-
-  /* ── SMART SCORE RING ── */
-  .smart-ring {
-    width:80px; height:80px; border-radius:50%; display:flex; flex-direction:column;
-    align-items:center; justify-content:center; font-size:28px; font-weight:900;
-    position:relative; border:3px solid;
-  }
-  .smart-ring-lbl { font-size:9px; font-weight:600; text-transform:uppercase;
-    letter-spacing:.4px; margin-top:-2px; }
-  .score-1,.score-2,.score-3  { border-color:var(--red); color:var(--red); background:rgba(255,77,106,.08); }
-  .score-4,.score-5,.score-6  { border-color:var(--gold); color:var(--gold); background:rgba(245,158,11,.08); }
-  .score-7,.score-8           { border-color:var(--blue); color:var(--blue); background:rgba(59,130,246,.08); }
-  .score-9,.score-10          { border-color:var(--green); color:var(--green); background:rgba(0,212,161,.08); }
-
-  /* ── TECH GAUGE ── */
-  .gauge-wrap { display:flex; flex-direction:column; align-items:center; gap:6px; }
-  .gauge-label { font-size:11px; color:var(--text2); font-weight:600; }
-  .gauge-val   { font-size:13px; font-weight:800; }
-  .gauge-sub   { font-size:10px; color:var(--text3); margin-top:1px; }
-  .buy-val { color:var(--green); }
-  .sell-val { color:var(--red); }
-  .neu-val  { color:var(--gold); }
-
-  /* ── FINANCIAL TABLE (horizontal scroll, sticky col) ── */
-  .fin-tbl-wrap { overflow-x:auto; max-width:100%; }
-  .fin-tbl { min-width:700px; border-collapse:collapse; width:100%; }
-  .fin-tbl th { background:var(--bg3); color:var(--text3); font-size:10px; text-transform:uppercase;
-    letter-spacing:.4px; padding:7px 12px; text-align:right; border-bottom:1px solid var(--border);
-    white-space:nowrap; }
-  .fin-tbl th:first-child { text-align:left; position:sticky; left:0; background:var(--bg3); z-index:2; min-width:160px; }
-  .fin-tbl td { padding:6px 12px; border-bottom:1px solid rgba(30,58,95,.4); font-size:12px;
-    text-align:right; white-space:nowrap; color:var(--text); }
-  .fin-tbl td:first-child { text-align:left; position:sticky; left:0; background:var(--bg2); z-index:1;
-    font-size:11.5px; color:var(--text2); padding-left:14px; }
-  .fin-tbl tr:hover td { background:var(--bg3); }
-  .fin-tbl tr:hover td:first-child { background:var(--bg3); }
-  .fin-section-hdr td { background:var(--bg4)!important; color:var(--text2)!important; font-size:10px!important;
-    font-weight:700!important; text-transform:uppercase!important; letter-spacing:.4px!important;
-    padding:4px 12px!important; padding-left:14px!important; }
-  .fin-section-hdr td:first-child { background:var(--bg4)!important; }
-
-  /* ── STAT GROUP ── */
-  .stat-group { margin-bottom:16px; }
-  .stat-group-title { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.5px;
-    color:var(--text3); padding:6px 0; border-bottom:1px solid var(--border); margin-bottom:8px; }
-  .stat-row2 { display:flex; flex-direction:column; gap:0; }
-  .stat-line { display:flex; justify-content:space-between; align-items:center;
-    padding:5px 0; border-bottom:1px solid rgba(30,58,95,.3); font-size:12px; }
-  .stat-line:last-child { border-bottom:none; }
-  .stat-line-lbl { color:var(--text2); }
-  .stat-line-val { font-weight:600; color:var(--text); }
-
-  /* ── ANALYST CONSENSUS BAR ── */
-  .consensus-bar { display:flex; height:8px; border-radius:4px; overflow:hidden; margin:8px 0; }
-  .cb-buy  { background:var(--green); }
-  .cb-hold { background:var(--gold); }
-  .cb-sell { background:var(--red); }
-
-  /* ── PRICE TARGET ── */
-  .pt-range { position:relative; height:28px; margin:8px 0; }
-  .pt-line  { position:absolute; top:50%; height:2px; background:var(--border2); left:0; right:0; transform:translateY(-50%); }
-  .pt-current { position:absolute; top:0; bottom:0; width:3px; background:var(--blue); border-radius:2px; }
-  .pt-avg { position:absolute; top:0; bottom:0; width:3px; background:var(--green); border-radius:2px; }
-  .pt-low { position:absolute; left:0; top:0; bottom:0; width:3px; background:var(--text3); border-radius:2px; }
-  .pt-high { position:absolute; right:0; top:0; bottom:0; width:3px; background:var(--text3); border-radius:2px; }
-
-  /* ── BEAT/MISS BADGE ── */
-  .beat { background:rgba(0,212,161,.15); color:var(--green); display:inline-block; padding:1px 6px; border-radius:3px; font-size:10px; font-weight:600; }
-  .miss { background:rgba(255,77,106,.15); color:var(--red); display:inline-block; padding:1px 6px; border-radius:3px; font-size:10px; font-weight:600; }
-  .inline-tag { display:inline-block; padding:1px 6px; border-radius:3px; font-size:10px; font-weight:600; }
-
-  /* ── MA SIGNAL BADGE ── */
-  .sig-buy  { color:var(--green); font-weight:700; font-size:10px; }
-  .sig-sell { color:var(--red); font-weight:700; font-size:10px; }
-  .sig-neu  { color:var(--gold); font-weight:700; font-size:10px; }
-
-  /* ── ANALYST CARD ── */
-  .analyst-card { display:flex; gap:10px; padding:9px 0; border-bottom:1px solid var(--border); align-items:flex-start; }
-  .analyst-card:last-child { border-bottom:none; }
-  .analyst-firm { font-size:12px; font-weight:600; }
-  .analyst-analyst { font-size:10px; color:var(--text3); }
-  .analyst-action { font-size:10px; color:var(--text2); margin-top:2px; }
-  .analyst-pt { font-size:12px; font-weight:700; color:var(--green); }
-  .analyst-date { font-size:10px; color:var(--text3); }
-
-  /* ── INSIDER ROW ── */
-  .insider-buy { color:var(--green); font-weight:700; }
-  .insider-sell { color:var(--red); font-weight:700; }
-
-  /* ── DIVIDEND YIELD DISPLAY ── */
-  .div-yield-big { font-size:36px; font-weight:900; color:var(--green); }
-  .div-stat-row { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:10px; }
-
-  /* ── OWNERSHIP DONUT AREA ── */
-  #own-donut-wrap { display:flex; align-items:center; gap:20px; flex-wrap:wrap; margin-bottom:16px; }
-  #own-donut-wrap canvas { max-width:180px; max-height:180px; }
-  .own-legend { display:flex; flex-direction:column; gap:6px; }
-  .own-leg-item { display:flex; align-items:center; gap:8px; font-size:12px; }
-  .own-leg-dot { width:10px; height:10px; border-radius:50%; flex-shrink:0; }
-
-  /* ── STOCK TABS (main) ── */
-  .stock-tabs { display:flex; gap:1px; margin-bottom:0; border-bottom:1px solid var(--border);
-    overflow-x:auto; scrollbar-width:none; }
-  .stock-tabs::-webkit-scrollbar { display:none; }
-  .stock-tab { padding:9px 16px; cursor:pointer; color:var(--text3); font-size:12px;
-    border-bottom:2px solid transparent; margin-bottom:-1px; white-space:nowrap;
-    transition:.15s; }
-  .stock-tab:hover { color:var(--text2); background:var(--bg3); }
-  .stock-tab.active { color:var(--blue); border-bottom-color:var(--blue); font-weight:600; }
-  .stock-tab-content { display:none; padding:16px 0 0; }
-  .stock-tab-content.active { display:block; }
-
-  /* ── OVERVIEW GRID ── */
-  .ov-top { display:grid; grid-template-columns:auto 1fr 1fr; gap:16px; align-items:start; margin-bottom:16px; }
-  @media(max-width:768px) { .ov-top { grid-template-columns:1fr 1fr; } }
 </style>
 </head>
 <body>
@@ -597,421 +455,220 @@ function checkPw(){
 </div>
 
 <!-- ════════════════════════════════════
-     PAGE 2: STOCK DETAIL (COMPREHENSIVE)
+     PAGE 2: STOCK DETAIL
 ════════════════════════════════════ -->
 <div class="page" id="pg-stock">
-  <!-- Top header bar -->
-  <div class="sec-hdr" style="margin-bottom:10px">
+  <div class="sec-hdr">
     <button class="back-btn" onclick="nav('dashboard')">← Back</button>
     <h2 id="stock-title">Apple Inc. (AAPL)</h2>
-    <span class="badge badge-open" id="sq-exchange-badge">NASDAQ · OPEN</span>
+    <span class="badge badge-open">NYSE · OPEN</span>
     <div style="margin-left:auto;display:flex;gap:8px">
-      <select style="font-size:12px"><option>+ Watchlist</option><option>My Watchlist</option></select>
+      <select style="font-size:12px"><option>Add to Watchlist</option><option>My Watchlist</option></select>
       <button class="nav-btn">Buy</button>
       <button class="nav-btn" style="background:var(--red)">Sell</button>
     </div>
   </div>
 
-  <!-- ── QUOTE HEADER STRIP ── -->
-  <div class="card" style="margin-bottom:12px;padding:12px 16px">
-    <div style="display:flex;gap:20px;flex-wrap:wrap;align-items:center">
-      <!-- Name + Price block -->
+  <!-- Quote Header -->
+  <div class="card" style="margin-bottom:12px">
+    <div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-end">
       <div>
-        <div class="quote-name" id="sq-name" style="font-size:16px;font-weight:700">Apple Inc.</div>
-        <div style="font-size:11px;color:var(--text3)" id="sq-meta">AAPL · NASDAQ · Technology</div>
-        <div style="display:flex;align-items:baseline;gap:10px;margin-top:4px">
-          <span class="quote-price up" id="sq-price" style="font-size:28px">$189.45</span>
-          <span class="quote-change up" id="sq-chg">▲ $2.31 (+1.24%)</span>
-          <span style="font-size:10px;color:var(--text3)" id="sq-time">Pre-Market: $190.10 ▲0.34%</span>
-        </div>
+        <div class="quote-name" id="sq-name">Apple Inc.</div>
+        <div class="quote-ticker">AAPL · NASDAQ · Technology</div>
       </div>
-      <!-- Key stats grid -->
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;flex:1;min-width:320px">
-        <div class="stat"><div class="stat-label">Open</div><div class="stat-val" id="sq-open">$187.90</div></div>
-        <div class="stat"><div class="stat-label">Day High</div><div class="stat-val up" id="sq-high">$190.12</div></div>
-        <div class="stat"><div class="stat-label">Day Low</div><div class="stat-val dn" id="sq-low">$187.05</div></div>
-        <div class="stat"><div class="stat-label">Prev Close</div><div class="stat-val" id="sq-prev">$187.14</div></div>
-        <div class="stat"><div class="stat-label">Volume</div><div class="stat-val" id="sq-vol">58.4M</div></div>
-        <div class="stat"><div class="stat-label">Avg Vol (90d)</div><div class="stat-val" id="sq-avgvol">62.1M</div></div>
-        <div class="stat"><div class="stat-label">Market Cap</div><div class="stat-val" id="sq-mc">$2.94T</div></div>
-        <div class="stat"><div class="stat-label">Beta (5Y)</div><div class="stat-val" id="sq-beta">1.28</div></div>
+      <div>
+        <div class="quote-price up" id="sq-price">$189.45</div>
+        <div class="quote-change up" id="sq-chg">▲ $2.31 (1.24%)</div>
       </div>
-      <!-- 52W range -->
-      <div style="min-width:200px">
-        <div style="font-size:10px;color:var(--text3);margin-bottom:4px">52-Week Range</div>
-        <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px">
-          <span class="dn" id="sq-52l">$143.90</span>
-          <span class="up" id="sq-52h">$198.23</span>
-        </div>
-        <div style="position:relative;height:6px;background:var(--bg3);border-radius:3px;overflow:hidden">
-          <div id="sq-52pos" style="position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,var(--red),var(--green));border-radius:3px;width:84%"></div>
-          <div id="sq-52cur" style="position:absolute;top:-2px;bottom:-2px;width:3px;background:var(--blue);border-radius:2px;left:82%"></div>
-        </div>
-        <div style="font-size:10px;color:var(--text3);margin-top:4px;text-align:center" id="sq-52pct">84% of 52W range</div>
+      <div class="grid4" style="gap:8px;flex:1">
+        <div class="stat"><div class="stat-label">Day High</div><div class="stat-val" id="sq-high">$190.12</div></div>
+        <div class="stat"><div class="stat-label">Day Low</div><div class="stat-val" id="sq-low">$187.05</div></div>
+        <div class="stat"><div class="stat-label">52W High</div><div class="stat-val">$198.23</div></div>
+        <div class="stat"><div class="stat-label">52W Low</div><div class="stat-val">$143.90</div></div>
+        <div class="stat"><div class="stat-label">Volume</div><div class="stat-val">58.4M</div></div>
+        <div class="stat"><div class="stat-label">Avg Vol</div><div class="stat-val">62.1M</div></div>
+        <div class="stat"><div class="stat-label">Market Cap</div><div class="stat-val">$2.94T</div></div>
+        <div class="stat"><div class="stat-label">Prev Close</div><div class="stat-val">$187.14</div></div>
       </div>
-      <!-- Smart Score -->
-      <div style="text-align:center;flex-shrink:0">
-        <div class="smart-ring score-8" id="sq-smart-ring">
-          <span id="sq-smart-num">8</span>
-          <span class="smart-ring-lbl">Smart<br>Score</span>
-        </div>
-        <div style="font-size:9px;color:var(--text3);margin-top:3px" id="sq-smart-lbl">Outperform</div>
+      <div style="text-align:center">
+        <div class="score-ring" style="background:linear-gradient(135deg,rgba(0,212,161,.2),rgba(0,212,161,.05));border:2px solid var(--green);color:var(--green)">8</div>
+        <div style="font-size:10px;color:var(--text3);margin-top:3px">Smart Score</div>
       </div>
     </div>
   </div>
 
-  <!-- ── MAIN CONTENT TABS ── -->
-  <div class="card" style="padding:0">
-    <div class="stock-tabs" id="stock-tabs-nav">
-      <div class="stock-tab active" onclick="stockTab(this,0)">📊 Overview</div>
-      <div class="stock-tab" onclick="stockTab(this,1)">📈 Chart</div>
-      <div class="stock-tab" onclick="stockTab(this,2)">💰 Financials</div>
-      <div class="stock-tab" onclick="stockTab(this,3)">📋 Statistics</div>
-      <div class="stock-tab" onclick="stockTab(this,4)">🔬 Technical</div>
-      <div class="stock-tab" onclick="stockTab(this,5)">📅 Earnings</div>
-      <div class="stock-tab" onclick="stockTab(this,6)">🏛️ Ownership</div>
-      <div class="stock-tab" onclick="stockTab(this,7)">💵 Dividends</div>
-      <div class="stock-tab" onclick="stockTab(this,8)">⚙️ Options</div>
-      <div class="stock-tab" onclick="stockTab(this,9)">📰 News</div>
+  <!-- Chart + Tabs -->
+  <div class="grid3" style="margin-bottom:12px">
+    <div class="card col-span2">
+      <div class="card-title">Price Chart
+        <div style="display:flex;gap:4px">
+          <div class="pills">
+            <span class="pill active" onclick="pillSwitch(this)">1D</span>
+            <span class="pill" onclick="pillSwitch(this)">1W</span>
+            <span class="pill" onclick="pillSwitch(this)">1M</span>
+            <span class="pill" onclick="pillSwitch(this)">3M</span>
+            <span class="pill" onclick="pillSwitch(this)">1Y</span>
+            <span class="pill" onclick="pillSwitch(this)">5Y</span>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;gap:6px;margin-bottom:8px;flex-wrap:wrap">
+        <span class="pill active" style="font-size:10px" onclick="pillSwitch(this);toggleIndicator('sma20',this)">SMA20</span>
+        <span class="pill active" style="font-size:10px" onclick="pillSwitch(this);toggleIndicator('sma50',this)">SMA50</span>
+        <span class="pill" style="font-size:10px" onclick="pillSwitch(this);toggleIndicator('sma200',this)">SMA200</span>
+        <span class="pill" style="font-size:10px" onclick="pillSwitch(this);toggleIndicator('vwap',this)">VWAP</span>
+        <span class="pill" style="font-size:10px" onclick="pillSwitch(this);toggleIndicator('bb',this)">BB</span>
+        <span class="pill active" style="font-size:10px" id="rsi-pill" onclick="togglePanel('rsi',this)">RSI</span>
+        <span class="pill active" style="font-size:10px" id="macd-pill" onclick="togglePanel('macd',this)">MACD</span>
+        <span class="pill" style="font-size:10px" id="vol-pill" onclick="togglePanel('vol',this)">Volume</span>
+      </div>
+      <div id="stock-chart-main" style="height:230px;border-radius:4px;overflow:hidden"></div>
+      <div id="stock-chart-vol" style="height:60px;margin-top:3px;border-radius:4px;overflow:hidden"></div>
+      <div id="stock-chart-rsi" style="height:80px;margin-top:3px;border-radius:4px;overflow:hidden"></div>
+      <div id="stock-chart-macd" style="height:80px;margin-top:3px;border-radius:4px;overflow:hidden"></div>
     </div>
-
-    <!-- ── TAB 0: AI OVERVIEW ── -->
-    <div class="stock-tab-content active" id="sdt-0" style="padding:16px">
-      <!-- AI Brief -->
-      <div class="ai-brief" style="margin-bottom:16px">
-        <div class="ai-label">⚡ AsporaPro AI Analysis</div>
-        <div class="ai-text" id="ov-ai-text">Loading AI analysis...</div>
+    <!-- Right panel -->
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <!-- Bid/Ask -->
+      <div class="card">
+        <div class="card-title">Order Book</div>
+        <table class="tbl">
+          <tr><th>Bid</th><th>Size</th><th>Ask</th><th>Size</th></tr>
+          <tr><td class="up">189.42</td><td>340</td><td class="dn">189.47</td><td>210</td></tr>
+          <tr><td class="up">189.40</td><td>820</td><td class="dn">189.50</td><td>450</td></tr>
+          <tr><td class="up">189.38</td><td>1200</td><td class="dn">189.52</td><td>680</td></tr>
+        </table>
       </div>
-      <!-- Top row: Smart Score + Analyst Consensus + Quant Grades -->
-      <div class="ov-top">
-        <!-- Smart Score Panel -->
-        <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:14px;text-align:center;min-width:160px">
-          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:10px">TipRanks Smart Score™</div>
-          <div class="smart-ring score-8" id="ov-smart-ring" style="margin:0 auto 8px">
-            <span id="ov-smart-num" style="font-size:32px">8</span>
-            <span class="smart-ring-lbl">/ 10</span>
-          </div>
-          <div style="font-size:13px;font-weight:700" id="ov-smart-verdict" class="up">Outperform</div>
-          <div style="font-size:10px;color:var(--text3);margin-top:4px">Based on 8 market factors</div>
-          <div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--border)">
-            <div style="font-size:10px;color:var(--text3)">Score Components</div>
-            <div id="ov-score-factors" style="margin-top:6px;display:flex;flex-direction:column;gap:4px"></div>
+      <!-- Analyst -->
+      <div class="card">
+        <div class="card-title">TipRanks Analyst Consensus</div>
+        <div style="display:flex;gap:8px;align-items:center;margin-bottom:8px">
+          <div class="score-ring" style="width:50px;height:50px;font-size:16px;background:rgba(0,212,161,.1);border:2px solid var(--green);color:var(--green)">Buy</div>
+          <div>
+            <div style="font-size:11px;color:var(--text3)">32 analysts</div>
+            <div style="font-size:11px;margin-top:2px"><span class="up">22 Buy</span> · <span style="color:var(--gold)">8 Hold</span> · <span class="dn">2 Sell</span></div>
+            <div style="font-size:11px;margin-top:2px">Avg PT: <strong>$204.50</strong> <span class="up">(+8.0%)</span></div>
           </div>
         </div>
-        <!-- Analyst Consensus -->
-        <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:14px">
-          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:10px">Wall Street Analyst Consensus</div>
-          <div style="display:flex;gap:14px;align-items:center;margin-bottom:10px">
-            <div style="text-align:center">
-              <div id="ov-cons-verdict" style="font-size:18px;font-weight:800" class="up">Strong Buy</div>
-              <div id="ov-cons-count" style="font-size:10px;color:var(--text3)">38 analysts</div>
-            </div>
-            <div style="flex:1">
-              <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px">
-                <span class="up" id="ov-buy-cnt">26 Buy</span>
-                <span style="color:var(--gold)" id="ov-hold-cnt">9 Hold</span>
-                <span class="dn" id="ov-sell-cnt">3 Sell</span>
-              </div>
-              <div class="consensus-bar" id="ov-cons-bar">
-                <div class="cb-buy" style="width:68%"></div>
-                <div class="cb-hold" style="width:24%"></div>
-                <div class="cb-sell" style="width:8%"></div>
-              </div>
-            </div>
-          </div>
-          <!-- Price Target -->
-          <div style="padding:10px;background:var(--bg4);border-radius:6px;margin-bottom:10px">
-            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
-              <span style="font-size:10px;color:var(--text3)">12-Month Price Target</span>
-              <span style="font-size:13px;font-weight:700" id="ov-pt-avg" class="up">$220.00</span>
-            </div>
-            <div style="display:flex;justify-content:space-between;font-size:10px;color:var(--text3);margin-bottom:4px">
-              <span id="ov-pt-low">Low $180</span>
-              <span>Current <span id="ov-pt-cur" style="color:var(--blue)">$189</span></span>
-              <span id="ov-pt-high">High $250</span>
-            </div>
-            <div style="position:relative;height:6px;background:var(--bg3);border-radius:3px">
-              <div style="position:absolute;inset:0;background:linear-gradient(90deg,var(--red),var(--gold),var(--green));border-radius:3px;opacity:.4"></div>
-              <div id="ov-pt-cur-dot" style="position:absolute;top:-3px;bottom:-3px;width:4px;background:var(--blue);border-radius:2px;left:32%"></div>
-              <div id="ov-pt-avg-dot" style="position:absolute;top:-3px;bottom:-3px;width:4px;background:var(--green);border-radius:2px;left:60%"></div>
-            </div>
-            <div style="display:flex;justify-content:flex-end;margin-top:4px">
-              <span style="font-size:10px" id="ov-pt-upside" class="up">+16.4% upside</span>
-            </div>
-          </div>
-          <!-- Top Analyst Ratings -->
-          <div id="ov-analyst-list"></div>
-        </div>
-        <!-- Quant Factor Grades -->
-        <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:14px">
-          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:10px">Seeking Alpha Quant Grades</div>
-          <div id="ov-quant-grades" style="display:flex;flex-direction:column;gap:6px"></div>
-          <div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--border);font-size:10px;color:var(--text3)">
-            Grades vs. sector peers · A+=Top 5% · F=Bottom 5%
-          </div>
-        </div>
-      </div>
-      <!-- Financial Snapshot -->
-      <div style="margin-bottom:16px">
-        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:10px;padding-bottom:4px;border-bottom:1px solid var(--border)">Financial Snapshot — Key Metrics</div>
-        <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:8px" id="ov-fin-snap"></div>
-      </div>
-      <!-- Description -->
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:14px">
-        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:8px">About the Company</div>
-        <div style="font-size:12.5px;color:var(--text2);line-height:1.7" id="ov-desc">Loading...</div>
-        <div style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap" id="ov-tags"></div>
+        <div class="prog-bar"><div class="prog-fill" style="background:var(--green);width:69%"></div></div>
+        <div style="font-size:10px;color:var(--text3);margin-top:3px">Buy consensus 69%</div>
       </div>
     </div>
+  </div>
 
-    <!-- ── TAB 1: CHART ── -->
-    <div class="stock-tab-content" id="sdt-1" style="padding:16px">
-      <div class="grid3">
-        <div class="col-span2">
-          <div style="display:flex;gap:6px;margin-bottom:8px;align-items:center;flex-wrap:wrap">
-            <div class="pills" style="margin-bottom:0">
-              <span class="pill active" onclick="pillSwitch(this)">1D</span>
-              <span class="pill" onclick="pillSwitch(this)">1W</span>
-              <span class="pill" onclick="pillSwitch(this)">1M</span>
-              <span class="pill" onclick="pillSwitch(this)">3M</span>
-              <span class="pill" onclick="pillSwitch(this)">1Y</span>
-              <span class="pill" onclick="pillSwitch(this)">5Y</span>
-            </div>
-            <div class="pills" style="margin-bottom:0">
-              <span class="pill active" style="font-size:10px" onclick="pillSwitch(this);toggleIndicator('sma20',this)">SMA20</span>
-              <span class="pill active" style="font-size:10px" onclick="pillSwitch(this);toggleIndicator('sma50',this)">SMA50</span>
-              <span class="pill" style="font-size:10px" onclick="pillSwitch(this);toggleIndicator('sma200',this)">SMA200</span>
-              <span class="pill" style="font-size:10px" onclick="pillSwitch(this);toggleIndicator('vwap',this)">VWAP</span>
-              <span class="pill" style="font-size:10px" onclick="pillSwitch(this);toggleIndicator('bb',this)">BB</span>
-              <span class="pill active" style="font-size:10px" id="rsi-pill" onclick="togglePanel('rsi',this)">RSI</span>
-              <span class="pill active" style="font-size:10px" id="macd-pill" onclick="togglePanel('macd',this)">MACD</span>
-              <span class="pill" style="font-size:10px" id="vol-pill" onclick="togglePanel('vol',this)">Volume</span>
-            </div>
-          </div>
-          <div id="stock-chart-main" style="height:260px;border-radius:4px;overflow:hidden"></div>
-          <div id="stock-chart-vol" style="height:60px;margin-top:3px;border-radius:4px;overflow:hidden"></div>
-          <div id="stock-chart-rsi" style="height:80px;margin-top:3px;border-radius:4px;overflow:hidden"></div>
-          <div id="stock-chart-macd" style="height:80px;margin-top:3px;border-radius:4px;overflow:hidden"></div>
-        </div>
-        <div style="display:flex;flex-direction:column;gap:10px">
-          <div class="card" style="padding:12px">
-            <div class="card-title">Order Book</div>
-            <table class="tbl">
-              <tr><th>Bid</th><th>Size</th><th>Ask</th><th>Size</th></tr>
-              <tr><td class="up" id="ob-b1">189.42</td><td>340</td><td class="dn" id="ob-a1">189.47</td><td>210</td></tr>
-              <tr><td class="up">189.40</td><td>820</td><td class="dn">189.50</td><td>450</td></tr>
-              <tr><td class="up">189.38</td><td>1200</td><td class="dn">189.52</td><td>680</td></tr>
-              <tr><td class="up">189.35</td><td>2100</td><td class="dn">189.55</td><td>900</td></tr>
-            </table>
-            <div style="font-size:10px;color:var(--text3);margin-top:6px;text-align:center">
-              Spread: <strong id="ob-spread">$0.05</strong> · Depth: <strong>12,400</strong>
-            </div>
-          </div>
-          <div class="card" style="padding:12px">
-            <div class="card-title">Performance</div>
-            <div id="chart-perf-list" style="display:flex;flex-direction:column;gap:4px"></div>
-          </div>
-          <div class="card" style="padding:12px">
-            <div class="card-title">Short Interest</div>
-            <div id="chart-short-data"></div>
-          </div>
-        </div>
+  <!-- Fundamentals Tabs -->
+  <div class="card">
+    <div class="tabs">
+      <div class="tab active" onclick="tabSwitch(this,'fund')">Income</div>
+      <div class="tab" onclick="tabSwitch(this,'fund')">Balance Sheet</div>
+      <div class="tab" onclick="tabSwitch(this,'fund')">Cash Flow</div>
+      <div class="tab" onclick="tabSwitch(this,'fund')">Valuation</div>
+      <div class="tab" onclick="tabSwitch(this,'fund')">Estimates</div>
+      <div class="tab" onclick="tabSwitch(this,'fund')">Ownership</div>
+      <div class="tab" onclick="tabSwitch(this,'fund')">Options</div>
+      <div class="tab" onclick="tabSwitch(this,'fund')">News</div>
+    </div>
+    <div class="tab-content active" id="fund-0">
+      <div class="grid3" style="margin-bottom:10px">
+        <div class="stat"><div class="stat-label">Revenue (TTM)</div><div class="stat-val">$383.3B</div><div class="stat-sub up">+2.0% YoY</div></div>
+        <div class="stat"><div class="stat-label">Net Income (TTM)</div><div class="stat-val">$97.0B</div><div class="stat-sub up">+2.9% YoY</div></div>
+        <div class="stat"><div class="stat-label">EPS (Diluted)</div><div class="stat-val">$6.43</div><div class="stat-sub up">+8.4% YoY</div></div>
+        <div class="stat"><div class="stat-label">Gross Margin</div><div class="stat-val">44.1%</div><div class="stat-sub">Expanding</div></div>
+        <div class="stat"><div class="stat-label">Operating Margin</div><div class="stat-val">29.8%</div><div class="stat-sub up">+140bps</div></div>
+        <div class="stat"><div class="stat-label">Net Margin</div><div class="stat-val">25.3%</div><div class="stat-sub">Best-in-class</div></div>
+      </div>
+      <div class="chart-wrap" style="height:160px"><canvas id="income-chart"></canvas></div>
+      <!-- keep Chart.js bar chart above; LW charts used for price charts -->
+    </div>
+    <div class="tab-content" id="fund-1">
+      <div class="grid4">
+        <div class="stat"><div class="stat-label">Total Assets</div><div class="stat-val">$352.6B</div></div>
+        <div class="stat"><div class="stat-label">Total Liabilities</div><div class="stat-val">$290.4B</div></div>
+        <div class="stat"><div class="stat-label">Shareholders Equity</div><div class="stat-val">$62.1B</div></div>
+        <div class="stat"><div class="stat-label">Net Debt</div><div class="stat-val">-$54.2B</div><div class="stat-sub up">Net cash</div></div>
+        <div class="stat"><div class="stat-label">Current Ratio</div><div class="stat-val">0.99</div></div>
+        <div class="stat"><div class="stat-label">D/E Ratio</div><div class="stat-val">1.87</div></div>
+        <div class="stat"><div class="stat-label">Book Value/Share</div><div class="stat-val">$4.12</div></div>
+        <div class="stat"><div class="stat-label">Cash & Eq.</div><div class="stat-val">$73.1B</div></div>
       </div>
     </div>
-
-    <!-- ── TAB 2: FINANCIALS ── -->
-    <div class="stock-tab-content" id="sdt-2" style="padding:16px">
-      <div style="display:flex;gap:8px;margin-bottom:12px;align-items:center;flex-wrap:wrap">
-        <div class="pills" style="margin-bottom:0">
-          <span class="pill active" id="fin-is-btn" onclick="finSwitch('IS')">Income Statement</span>
-          <span class="pill" id="fin-bs-btn" onclick="finSwitch('BS')">Balance Sheet</span>
-          <span class="pill" id="fin-cf-btn" onclick="finSwitch('CF')">Cash Flow</span>
-        </div>
-        <div class="pills" style="margin-bottom:0;margin-left:auto">
-          <span class="pill active" id="fin-ann-btn" onclick="finPeriod('annual')">Annual</span>
-          <span class="pill" id="fin-qtr-btn" onclick="finPeriod('quarterly')">Quarterly</span>
-        </div>
-      </div>
-      <div id="fin-table-wrap"></div>
-    </div>
-
-    <!-- ── TAB 3: STATISTICS ── -->
-    <div class="stock-tab-content" id="sdt-3" style="padding:16px">
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px" id="stats-grid"></div>
-    </div>
-
-    <!-- ── TAB 4: TECHNICAL ANALYSIS ── -->
-    <div class="stock-tab-content" id="sdt-4" style="padding:16px">
-      <!-- Summary Gauges -->
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:16px">
-        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:14px;text-align:center">Technical Analysis Summary</div>
-        <div style="display:flex;justify-content:space-around;gap:16px;flex-wrap:wrap" id="tech-gauges"></div>
-      </div>
-      <!-- Moving Averages Table -->
-      <div class="grid2" style="margin-bottom:16px">
-        <div>
-          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:8px">Moving Averages</div>
-          <table class="tbl" id="tech-ma-tbl">
-            <thead><tr><th>Name</th><th>Value</th><th>Signal</th></tr></thead>
-            <tbody></tbody>
-          </table>
-        </div>
-        <div>
-          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:8px">Technical Indicators</div>
-          <table class="tbl" id="tech-ind-tbl">
-            <thead><tr><th>Indicator</th><th>Value</th><th>Signal</th></tr></thead>
-            <tbody></tbody>
-          </table>
-        </div>
-      </div>
-      <!-- Pivot Points -->
-      <div>
-        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:8px">Pivot Points</div>
-        <div id="tech-pivot-wrap" style="overflow-x:auto">
-          <table class="tbl" id="tech-pivot-tbl" style="min-width:600px">
-            <thead><tr><th>Method</th><th>S3</th><th>S2</th><th>S1</th><th>Pivot</th><th>R1</th><th>R2</th><th>R3</th></tr></thead>
-            <tbody></tbody>
-          </table>
-        </div>
+    <div class="tab-content" id="fund-2">
+      <div class="grid4">
+        <div class="stat"><div class="stat-label">Operating CF</div><div class="stat-val">$110.5B</div></div>
+        <div class="stat"><div class="stat-label">Free Cash Flow</div><div class="stat-val">$99.6B</div></div>
+        <div class="stat"><div class="stat-label">FCF Margin</div><div class="stat-val">26.0%</div></div>
+        <div class="stat"><div class="stat-label">CapEx</div><div class="stat-val">$10.9B</div></div>
+        <div class="stat"><div class="stat-label">FCF/Share</div><div class="stat-val">$6.60</div></div>
+        <div class="stat"><div class="stat-label">P/FCF</div><div class="stat-val">28.7x</div></div>
+        <div class="stat"><div class="stat-label">Investing CF</div><div class="stat-val">-$3.8B</div></div>
+        <div class="stat"><div class="stat-label">Financing CF</div><div class="stat-val">-$103.4B</div></div>
       </div>
     </div>
-
-    <!-- ── TAB 5: EARNINGS ── -->
-    <div class="stock-tab-content" id="sdt-5" style="padding:16px">
-      <!-- EPS Surprise Chart -->
-      <div class="grid2" style="margin-bottom:16px">
-        <div>
-          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:8px">EPS: Actual vs Estimate (8 Quarters)</div>
-          <div style="height:200px"><canvas id="earnings-chart"></canvas></div>
-        </div>
-        <div>
-          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:8px">Revenue: Actual vs Estimate</div>
-          <div style="height:200px"><canvas id="revenue-chart"></canvas></div>
-        </div>
+    <div class="tab-content" id="fund-3">
+      <div class="grid4">
+        <div class="stat"><div class="stat-label">P/E (TTM)</div><div class="stat-val">29.4x</div></div>
+        <div class="stat"><div class="stat-label">Fwd P/E</div><div class="stat-val">26.8x</div></div>
+        <div class="stat"><div class="stat-label">P/S</div><div class="stat-val">7.7x</div></div>
+        <div class="stat"><div class="stat-label">P/B</div><div class="stat-val">46.0x</div></div>
+        <div class="stat"><div class="stat-label">EV/EBITDA</div><div class="stat-val">22.1x</div></div>
+        <div class="stat"><div class="stat-label">PEG Ratio</div><div class="stat-val">2.8x</div></div>
+        <div class="stat"><div class="stat-label">Div Yield</div><div class="stat-val">0.54%</div></div>
+        <div class="stat"><div class="stat-label">Beta (5Y)</div><div class="stat-val">1.28</div></div>
+        <div class="stat"><div class="stat-label">ROE</div><div class="stat-val">160.1%</div></div>
+        <div class="stat"><div class="stat-label">ROIC</div><div class="stat-val">53.8%</div></div>
+        <div class="stat"><div class="stat-label">ROA</div><div class="stat-val">27.5%</div></div>
+        <div class="stat"><div class="stat-label">EV</div><div class="stat-val">$2.88T</div></div>
       </div>
-      <!-- Forward Estimates -->
+    </div>
+    <div class="tab-content" id="fund-4">
+      <table class="tbl">
+        <thead><tr><th>Period</th><th>EPS Est</th><th>EPS Act</th><th>Surprise</th><th>Rev Est</th><th>Rev Act</th></tr></thead>
+        <tbody>
+          <tr><td>Q2 2024</td><td>$1.35</td><td>$1.40</td><td class="up">+3.7%</td><td>$94.0B</td><td>$94.9B</td></tr>
+          <tr><td>Q1 2024</td><td>$2.10</td><td>$2.18</td><td class="up">+3.8%</td><td>$117.9B</td><td>$119.6B</td></tr>
+          <tr><td>Q4 2023</td><td>$1.31</td><td>$1.29</td><td class="dn">-1.5%</td><td>$89.3B</td><td>$89.5B</td></tr>
+          <tr><td>Q3 2023</td><td>$1.20</td><td>$1.26</td><td class="up">+5.0%</td><td>$81.7B</td><td>$83.0B</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="tab-content" id="fund-5">
       <div class="grid2">
         <div>
-          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:8px">Forward EPS Estimates</div>
-          <table class="tbl" id="fwd-eps-tbl">
-            <thead><tr><th>Period</th><th>Consensus</th><th>High</th><th>Low</th><th># Analysts</th></tr></thead>
-            <tbody></tbody>
+          <div style="margin-bottom:8px;font-size:11px;color:var(--text2)">Institutional Ownership: <strong>59.8%</strong> · Insider: <strong>2.4%</strong> · Float: <strong>97.6%</strong></div>
+          <table class="tbl">
+            <thead><tr><th>Institution</th><th>Shares</th><th>% Float</th><th>Change</th></tr></thead>
+            <tbody>
+              <tr><td>Vanguard Group</td><td>1.34B</td><td>8.92%</td><td class="up">+12M</td></tr>
+              <tr><td>BlackRock Inc.</td><td>1.05B</td><td>7.04%</td><td class="dn">-8M</td></tr>
+              <tr><td>Berkshire Hathaway</td><td>905M</td><td>6.03%</td><td style="color:var(--text3)">0</td></tr>
+              <tr><td>State Street Corp</td><td>590M</td><td>3.93%</td><td class="up">+3M</td></tr>
+              <tr><td>Fidelity Mgmt</td><td>340M</td><td>2.27%</td><td class="up">+21M</td></tr>
+            </tbody>
           </table>
         </div>
         <div>
-          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:8px">Earnings History</div>
-          <table class="tbl" id="earn-hist-tbl">
-            <thead><tr><th>Quarter</th><th>EPS Est</th><th>EPS Act</th><th>Surprise</th><th>Rev Est</th><th>Rev Act</th></tr></thead>
-            <tbody></tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── TAB 6: OWNERSHIP ── -->
-    <div class="stock-tab-content" id="sdt-6" style="padding:16px">
-      <!-- Donut + breakdown -->
-      <div class="grid2" style="margin-bottom:16px">
-        <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:14px">
-          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:10px">Ownership Breakdown</div>
-          <div id="own-donut-wrap">
-            <canvas id="own-donut" style="max-width:180px;max-height:180px"></canvas>
-            <div class="own-legend" id="own-legend"></div>
-          </div>
-          <div id="own-stats" style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:10px"></div>
-        </div>
-        <div>
-          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:8px">Hedge Fund Activity</div>
-          <table class="tbl" id="hf-tbl">
-            <thead><tr><th>Fund</th><th>Shares (M)</th><th>% Chg</th><th>Action</th></tr></thead>
-            <tbody></tbody>
-          </table>
-        </div>
-      </div>
-      <!-- Institutions + Insiders -->
-      <div class="grid2">
-        <div>
-          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:8px">Top 10 Institutional Holders</div>
-          <table class="tbl" id="inst-tbl">
-            <thead><tr><th>Institution</th><th>Shares</th><th>% Float</th><th>Chg</th></tr></thead>
-            <tbody></tbody>
-          </table>
-        </div>
-        <div>
-          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:8px">Insider Transactions (Last 6 Months)</div>
-          <table class="tbl" id="insider-tbl">
-            <thead><tr><th>Insider</th><th>Title</th><th>Type</th><th>Shares</th><th>Value</th><th>Date</th></tr></thead>
-            <tbody></tbody>
+          <div style="font-size:11px;color:var(--text2);margin-bottom:8px">Recent Insider Transactions</div>
+          <table class="tbl">
+            <thead><tr><th>Insider</th><th>Type</th><th>Shares</th><th>Value</th></tr></thead>
+            <tbody>
+              <tr><td>T. Cook (CEO)</td><td><span class="badge badge-sell">Sell</span></td><td>511K</td><td>$95.4M</td></tr>
+              <tr><td>L. Maestri (CFO)</td><td><span class="badge badge-sell">Sell</span></td><td>240K</td><td>$44.9M</td></tr>
+              <tr><td>J. Williams (COO)</td><td><span class="badge badge-buy">Buy</span></td><td>12K</td><td>$2.2M</td></tr>
+            </tbody>
           </table>
         </div>
       </div>
     </div>
-
-    <!-- ── TAB 7: DIVIDENDS ── -->
-    <div class="stock-tab-content" id="sdt-7" style="padding:16px">
-      <div class="grid3" style="margin-bottom:16px">
-        <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:16px;text-align:center">
-          <div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px">Annual Dividend Yield</div>
-          <div class="div-yield-big" id="div-yield-big">0.54%</div>
-          <div style="font-size:11px;color:var(--text3);margin-top:2px" id="div-per-share">$1.00 per share/yr</div>
-        </div>
-        <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:14px">
-          <div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px">Dividend Details</div>
-          <div id="div-stats" style="display:flex;flex-direction:column;gap:5px"></div>
-        </div>
-        <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:14px">
-          <div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px">Growth History</div>
-          <div id="div-growth" style="display:flex;flex-direction:column;gap:5px"></div>
-        </div>
-      </div>
-      <div class="grid2">
-        <div>
-          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:8px">Quarterly Dividends (Bar Chart)</div>
-          <div style="height:180px"><canvas id="div-chart"></canvas></div>
-        </div>
-        <div>
-          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:8px">Dividend Payment History</div>
-          <table class="tbl" id="div-hist-tbl">
-            <thead><tr><th>Ex-Date</th><th>Amount</th><th>Pay Date</th><th>Yield</th></tr></thead>
-            <tbody></tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── TAB 8: OPTIONS ── -->
-    <div class="stock-tab-content" id="sdt-8" style="padding:16px">
-      <div style="display:flex;gap:8px;margin-bottom:10px;align-items:center;flex-wrap:wrap">
+    <div class="tab-content" id="fund-6">
+      <!-- Options Chain -->
+      <div style="display:flex;gap:8px;margin-bottom:10px;align-items:center">
         <span style="font-size:11px;color:var(--text3)">Expiry:</span>
         <select><option>Jun 21, 2024</option><option>Jul 19, 2024</option><option>Sep 20, 2024</option><option>Jan 17, 2025</option></select>
-        <span style="font-size:11px;color:var(--text3);margin-left:8px">
-          PCR (OI): <strong id="opt-pcr">0.84</strong> ·
-          IVR: <strong id="opt-ivr">42</strong> ·
-          IVP: <strong id="opt-ivp">38%</strong> ·
-          Avg IV: <strong id="opt-iv">28.4%</strong>
-        </span>
-      </div>
-      <div style="display:grid;grid-template-columns:1fr auto 1fr;gap:2px">
-        <div style="background:rgba(0,212,161,.04);padding:5px 8px;font-size:10px;font-weight:700;color:var(--green);text-align:center">CALLS</div>
-        <div style="background:var(--bg4);padding:5px 8px;font-size:10px;font-weight:700;text-align:center;min-width:72px">STRIKE</div>
-        <div style="background:rgba(255,77,106,.04);padding:5px 8px;font-size:10px;font-weight:700;color:var(--red);text-align:center">PUTS</div>
-        <div style="background:rgba(0,212,161,.04);padding:5px;font-size:9px;color:var(--text3);display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:2px;text-align:right"><span>Last</span><span>Bid</span><span>Ask</span><span>OI</span></div>
-        <div></div>
-        <div style="background:rgba(255,77,106,.04);padding:5px;font-size:9px;color:var(--text3);display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:2px"><span>Last</span><span>Bid</span><span>Ask</span><span>OI</span></div>
+        <span style="font-size:11px;color:var(--text3);margin-left:8px">PCR (OI): <strong>0.84</strong> · IVR: <strong>42</strong></span>
       </div>
       <div class="chain-grid" id="options-chain"></div>
     </div>
-
-    <!-- ── TAB 9: NEWS ── -->
-    <div class="stock-tab-content" id="sdt-9" style="padding:16px">
-      <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;align-items:center">
-        <span class="pill active" style="font-size:10px">All News</span>
-        <span class="pill" style="font-size:10px">Bullish</span>
-        <span class="pill" style="font-size:10px">Bearish</span>
-        <span class="pill" style="font-size:10px">Earnings</span>
-        <span class="pill" style="font-size:10px">Analyst</span>
-        <span class="pill" style="font-size:10px">Insider</span>
-      </div>
+    <div class="tab-content" id="fund-7">
       <div id="stock-news"></div>
     </div>
   </div>
@@ -1510,304 +1167,6 @@ function checkPw(){
 </div>
 
 <script>
-// ═══════════════════════════════════
-// STOCK DETAIL DATA
-// ═══════════════════════════════════
-const STOCK_DETAIL_DATA = {
-  TSLA: {
-    name:'Tesla Inc.', ticker:'TSLA', exchange:'NASDAQ', sector:'Consumer Discretionary', industry:'Auto Manufacturers',
-    desc:'Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, energy generation and storage systems, and services. The Company produces the Model 3, Model Y, Model S, Model X, Cybertruck, and Semi. Tesla also offers Autopilot, Full Self-Driving (FSD) software, the Supercharger network, Solar Roof, and Powerwall.',
-    tags:['EV','Autonomous','Energy Storage','AI','Space Tech'],
-    smartScore:5, smartVerdict:'Neutral', scoreFactors:[
-      {name:'Analyst Consensus',val:'Moderate Buy',pct:60,clr:'var(--blue)'},
-      {name:'Hedge Fund Trend',val:'Reducing',pct:35,clr:'var(--red)'},
-      {name:'Insider Trading',val:'Selling',pct:20,clr:'var(--red)'},
-      {name:'Technical Signals',val:'Bearish',pct:28,clr:'var(--red)'},
-      {name:'News Sentiment',val:'Neutral',pct:50,clr:'var(--gold)'},
-      {name:'Earnings Quality',val:'Declining',pct:32,clr:'var(--gold)'},
-    ],
-    analystConsensus:'Moderate Buy', analystCount:35, buy:16, hold:14, sell:5,
-    ptAvg:195, ptLow:85, ptHigh:310, ptCurrent:174.32,
-    analysts:[
-      {firm:'Morgan Stanley',analyst:'A. Jonas',rating:'Overweight',pt:'$310',action:'Reiterates',date:'Jun 10'},
-      {firm:'Goldman Sachs',analyst:'M. Delaney',rating:'Neutral',pt:'$175',action:'Downgrade',date:'Jun 5'},
-      {firm:'Barclays',analyst:'D. Levy',rating:'Underweight',pt:'$85',action:'Reiterates',date:'May 28'},
-    ],
-    quantGrades:[
-      {factor:'Valuation',grade:'D+',sub:'Expensive vs peers',pct:22},
-      {factor:'Growth',grade:'C-',sub:'Revenue declining',pct:38},
-      {factor:'Profitability',grade:'B-',sub:'Margins compressing',pct:58},
-      {factor:'Momentum',grade:'D',sub:'Price below 200MA',pct:20},
-      {factor:'EPS Revisions',grade:'D+',sub:'Estimates cut',pct:24},
-    ],
-    finSnap:[
-      {label:'Revenue TTM',val:'$97.7B',sub:'-8.7% YoY',cls:'dn'},
-      {label:'Gross Margin',val:'17.9%',sub:'Down 420bps',cls:'dn'},
-      {label:'Net Income',val:'$7.9B',sub:'-55% YoY',cls:'dn'},
-      {label:'EPS Diluted',val:'$2.53',sub:'-55% YoY',cls:'dn'},
-      {label:'Free Cash Flow',val:'$3.6B',sub:'-50% YoY',cls:'dn'},
-      {label:'Net Debt',val:'-$22B',sub:'Net cash',cls:'up'},
-    ],
-    aiText:'Tesla faces a complex 2024: automotive revenue fell 9% YoY as EV competition intensifies from BYD, traditional OEMs, and Chinese manufacturers. Gross margin compressed to 17.9% (from 25.6% two years ago) due to aggressive price cuts. However, the Energy & Storage segment surged +113% YoY — a bright spot. FSD subscription and Robotaxi remain catalysts. Smart Score of 5 reflects balanced risks. Analysts divided: bulls cite FSD optionality and energy growth, bears cite auto margin pressure and valuation premium. Key risk: Musk distraction and brand perception.',
-    stats:{
-      valuation:[
-        {l:'P/E (TTM)',v:'68.9x'},{l:'Fwd P/E',v:'60.1x'},{l:'P/S (TTM)',v:'5.4x'},
-        {l:'P/B',v:'10.2x'},{l:'EV/EBITDA',v:'48.3x'},{l:'PEG Ratio',v:'4.1x'},
-        {l:'P/FCF',v:'47.8x'},{l:'EV/Revenue',v:'5.2x'},
-      ],
-      profitability:[
-        {l:'Gross Margin',v:'17.9%'},{l:'Operating Margin',v:'5.5%'},{l:'Net Margin',v:'8.1%'},
-        {l:'EBITDA Margin',v:'12.4%'},{l:'FCF Margin',v:'3.7%'},{l:'ROE',v:'14.8%'},
-        {l:'ROA',v:'8.2%'},{l:'ROIC',v:'11.2%'},
-      ],
-      growth:[
-        {l:'Revenue Growth (YoY)',v:'-9.2%',cls:'dn'},{l:'EPS Growth (YoY)',v:'-55.1%',cls:'dn'},
-        {l:'FCF Growth (YoY)',v:'-50.4%',cls:'dn'},{l:'Gross Profit Growth',v:'-18.2%',cls:'dn'},
-        {l:'Revenue (3Y CAGR)',v:'+32.1%',cls:'up'},{l:'EPS (3Y CAGR)',v:'+18.4%',cls:'up'},
-      ],
-      balance:[
-        {l:'Total Assets',v:'$106.6B'},{l:'Total Liabilities',v:'$46.4B'},
-        {l:'Total Equity',v:'$60.2B'},{l:'Net Debt / Cash',v:'-$22.0B'},
-        {l:'Current Ratio',v:'1.69'},{l:'D/E Ratio',v:'0.19'},
-        {l:'Interest Coverage',v:'38.2x'},{l:'Debt/EBITDA',v:'0.4x'},
-      ],
-      share:[
-        {l:'Shares Outstanding',v:'3.19B'},{l:'Float',v:'3.11B'},
-        {l:'Short Interest',v:'3.12%'},{l:'Short Ratio (days)',v:'1.2'},
-        {l:'Insider Own.',v:'13.0%'},{l:'Instit. Own.',v:'44.3%'},
-        {l:'Shares Buyback',v:'None'},{l:'Dividend Yield',v:'None'},
-      ],
-    },
-    tech:{
-      price:174.32, ma_summary:'Sell', osc_summary:'Sell', overall:'Sell',
-      ma:[
-        {n:'SMA 5',v:171.84,sig:'Buy'},{n:'SMA 10',v:169.20,sig:'Buy'},{n:'SMA 20',v:173.40,sig:'Buy'},
-        {n:'SMA 50',v:183.10,sig:'Sell'},{n:'SMA 100',v:196.40,sig:'Sell'},{n:'SMA 200',v:218.30,sig:'Sell'},
-        {n:'EMA 5',v:172.60,sig:'Buy'},{n:'EMA 10',v:170.14,sig:'Buy'},{n:'EMA 20',v:173.82,sig:'Buy'},
-        {n:'EMA 50',v:182.44,sig:'Sell'},{n:'EMA 100',v:195.20,sig:'Sell'},{n:'EMA 200',v:216.80,sig:'Sell'},
-      ],
-      indicators:[
-        {n:'RSI (14)',v:'38.2',sig:'Neutral'},{n:'MACD (12,26)',v:'-2.14',sig:'Sell'},
-        {n:'Stochastic %K',v:'24.8',sig:'Neutral'},{n:'CCI (20)',v:'-88.4',sig:'Sell'},
-        {n:'ADX (14)',v:'32.1',sig:'Sell'},{n:'Williams %R',v:'-78.3',sig:'Neutral'},
-        {n:'ATR (14)',v:'6.84',sig:'N/A'},{n:'Bull/Bear Power',v:'-4.22',sig:'Sell'},
-        {n:'Ultimate Osc.',v:'42.1',sig:'Neutral'},{n:'Momentum (10)',v:'-8.4',sig:'Sell'},
-      ],
-      pivots:[
-        {m:'Classic',s3:155.20,s2:162.40,s1:168.40,p:175.60,r1:181.60,r2:188.80,r3:196.00},
-        {m:'Fibonacci',s3:158.10,s2:164.40,s1:168.20,p:175.60,r1:183.00,r2:186.80,r3:193.10},
-        {m:'Camarilla',s3:170.10,s2:171.10,s1:172.10,p:175.60,r1:174.10,r2:175.10,r3:176.10},
-        {m:'Woodie',s3:154.80,s2:162.20,s1:168.40,p:176.00,r1:182.20,r2:189.40,r3:195.60},
-      ],
-    },
-    earnings:{
-      history:[
-        {q:'Q1 2024',epsEst:0.52,epsAct:0.45,epsSurp:-13.5,revEst:'$24.3B',revAct:'$21.3B',beat:false},
-        {q:'Q4 2023',epsEst:0.74,epsAct:0.71,epsSurp:-4.1,revEst:'$25.6B',revAct:'$25.2B',beat:false},
-        {q:'Q3 2023',epsEst:0.73,epsAct:0.66,epsSurp:-9.6,revEst:'$24.2B',revAct:'$23.4B',beat:false},
-        {q:'Q2 2023',epsEst:0.82,epsAct:0.91,epsSurp:+11.0,revEst:'$24.5B',revAct:'$24.9B',beat:true},
-        {q:'Q1 2023',epsEst:0.85,epsAct:1.07,epsSurp:+25.9,revEst:'$23.4B',revAct:'$23.3B',beat:false},
-        {q:'Q4 2022',epsEst:1.13,epsAct:1.19,epsSurp:+5.3,revEst:'$25.0B',revAct:'$24.3B',beat:false},
-        {q:'Q3 2022',epsEst:1.00,epsAct:1.05,epsSurp:+5.0,revEst:'$21.4B',revAct:'$21.5B',beat:true},
-        {q:'Q2 2022',epsEst:1.82,epsAct:2.27,epsSurp:+24.7,revEst:'$16.7B',revAct:'$16.9B',beat:true},
-      ],
-      fwdEps:[
-        {period:'Q2 2024',est:0.60,high:0.78,low:0.38,analysts:28},
-        {period:'Q3 2024',est:0.66,high:0.90,low:0.41,analysts:25},
-        {period:'FY 2024',est:2.60,high:3.20,low:1.80,analysts:35},
-        {period:'FY 2025',est:3.84,high:5.10,low:2.40,analysts:32},
-      ],
-    },
-    ownership:{
-      institutional:44.3, insider:13.0, public:42.7,
-      instStats:[
-        {l:'Institutions',v:'44.3%'},{l:'Shares Held',v:'1.41B'},
-        {l:'New Positions',v:'+142'},{l:'Reduced Positions',v:'-218'},
-      ],
-      institutions:[
-        {n:'Vanguard Group',shares:'258M',pct:'8.08%',chg:'+4.2M',cls:'up'},
-        {n:'BlackRock Inc.',shares:'186M',pct:'5.82%',chg:'-12.1M',cls:'dn'},
-        {n:'State Street Corp',shares:'112M',pct:'3.51%',chg:'-2.4M',cls:'dn'},
-        {n:'Capital Group',shares:'108M',pct:'3.38%',chg:'+8.8M',cls:'up'},
-        {n:'Geode Capital',shares:'74M',pct:'2.32%',chg:'+0.9M',cls:'up'},
-        {n:'T. Rowe Price',shares:'68M',pct:'2.13%',chg:'-5.2M',cls:'dn'},
-        {n:'Norges Bank',shares:'54M',pct:'1.69%',chg:'+1.1M',cls:'up'},
-        {n:'Fidelity Mgmt.',shares:'52M',pct:'1.63%',chg:'+2.4M',cls:'up'},
-      ],
-      hedgeFunds:[
-        {n:'Baillie Gifford',shares:91.5,chg:'+2.1%',action:'Holding'},
-        {n:'Cathie Wood (ARK)',shares:38.2,chg:'+12.4%',action:'Buying'},
-        {n:'Renaissance Tech',shares:4.8,chg:'-8.2%',action:'Reducing'},
-        {n:'Soros Fund',shares:2.1,chg:'-45.0%',action:'Selling'},
-      ],
-      insiders:[
-        {name:'E. Musk',title:'CEO',type:'Sell',shares:'8.5M',value:'$1.48B',date:'Jun 12 2024'},
-        {name:'Z. Kirkhorn',title:'Ex-CFO',type:'Sell',shares:'180K',value:'$31.4M',date:'May 20 2024'},
-        {name:'R. Taneja',title:'CFO',type:'Buy',shares:'25K',value:'$4.3M',date:'Apr 15 2024'},
-        {name:'K. Musk',title:'Director',type:'Sell',shares:'50K',value:'$8.7M',date:'Mar 22 2024'},
-      ],
-    },
-    dividends:{ yield:0, annualAmt:0, payoutRatio:'N/A', exDate:'N/A', payDate:'N/A',
-      consecutive:0, growth5yr:'N/A', history:[], note:'Tesla does not currently pay a dividend.' },
-    perf:{ '1D':'-1.18%','1W':'-3.4%','1M':'-8.2%','3M':'-14.1%','YTD':'-28.4%','1Y':'-22.1%','3Y':'+42.8%','5Y':'+810.2%' },
-    short:{ shortPct:'3.12%', shortShares:'99.8M', daysTocover:'1.2', shortRatio:'3.12%' },
-  },
-
-  AAPL: {
-    name:'Apple Inc.', ticker:'AAPL', exchange:'NASDAQ', sector:'Technology', industry:'Consumer Electronics',
-    desc:'Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. It operates through iPhone, Mac, iPad, Wearables/Home/Accessories, and Services segments. The Services segment includes the App Store, Apple Music, Apple TV+, Apple Pay, iCloud, and AppleCare.',
-    tags:['Consumer Tech','Services','AI','Wearables','5G'],
-    smartScore:8, smartVerdict:'Outperform', scoreFactors:[
-      {name:'Analyst Consensus',val:'Strong Buy',pct:85,clr:'var(--green)'},
-      {name:'Hedge Fund Trend',val:'Accumulating',pct:78,clr:'var(--green)'},
-      {name:'Insider Trading',val:'Selling (routine)',pct:45,clr:'var(--gold)'},
-      {name:'Technical Signals',val:'Bullish',pct:72,clr:'var(--green)'},
-      {name:'News Sentiment',val:'Positive',pct:68,clr:'var(--green)'},
-      {name:'Earnings Quality',val:'Consistent beats',pct:80,clr:'var(--green)'},
-    ],
-    analystConsensus:'Strong Buy', analystCount:38, buy:27, hold:9, sell:2,
-    ptAvg:220, ptLow:165, ptHigh:260, ptCurrent:189.45,
-    analysts:[
-      {firm:'Wedbush',analyst:'D. Ives',rating:'Outperform',pt:'$250',action:'Reiterates',date:'Jun 12'},
-      {firm:'JP Morgan',analyst:'S. Kim',rating:'Overweight',pt:'$220',action:'Reiterates',date:'Jun 8'},
-      {firm:'BofA Sec.',analyst:'W. Power',rating:'Buy',pt:'$230',action:'Upgrade',date:'Jun 1'},
-    ],
-    quantGrades:[
-      {factor:'Valuation',grade:'C',sub:'Premium to peers',pct:50},
-      {factor:'Growth',grade:'B+',sub:'Services expanding',pct:72},
-      {factor:'Profitability',grade:'A+',sub:'Best-in-class margins',pct:96},
-      {factor:'Momentum',grade:'B',sub:'Above all MAs',pct:68},
-      {factor:'EPS Revisions',grade:'B+',sub:'Estimates raised',pct:74},
-    ],
-    finSnap:[
-      {label:'Revenue TTM',val:'$383.3B',sub:'+2.0% YoY',cls:'up'},
-      {label:'Gross Margin',val:'44.1%',sub:'Expanding',cls:'up'},
-      {label:'Net Income',val:'$97.0B',sub:'+2.9% YoY',cls:'up'},
-      {label:'EPS Diluted',val:'$6.43',sub:'+8.4% YoY',cls:'up'},
-      {label:'Free Cash Flow',val:'$99.6B',sub:'+18% YoY',cls:'up'},
-      {label:'Net Debt',val:'-$54.2B',sub:'Net cash',cls:'up'},
-    ],
-    aiText:'Apple continues to demonstrate the quality of its business model. Services revenue grew 14% YoY to $24.2B in Q2 — now representing 25% of total revenue with 70%+ margins. iPhone revenue soft at -1% but upcoming iPhone 16 cycle with Apple Intelligence AI features expected to drive a major upgrade supercycle. Market cap near $3T with buyback machine (>$90B/yr) supporting EPS growth even on flat revenue. Smart Score 8 reflects strong fundamentals. Key risks: China revenue (-8% YoY) and regulatory pressure on App Store.',
-    stats:{
-      valuation:[
-        {l:'P/E (TTM)',v:'29.4x'},{l:'Fwd P/E',v:'26.8x'},{l:'P/S (TTM)',v:'7.7x'},
-        {l:'P/B',v:'46.0x'},{l:'EV/EBITDA',v:'22.1x'},{l:'PEG Ratio',v:'2.8x'},
-        {l:'P/FCF',v:'28.7x'},{l:'EV/Revenue',v:'7.5x'},
-      ],
-      profitability:[
-        {l:'Gross Margin',v:'44.1%'},{l:'Operating Margin',v:'29.8%'},{l:'Net Margin',v:'25.3%'},
-        {l:'EBITDA Margin',v:'33.4%'},{l:'FCF Margin',v:'26.0%'},{l:'ROE',v:'160.1%'},
-        {l:'ROA',v:'27.5%'},{l:'ROIC',v:'53.8%'},
-      ],
-      growth:[
-        {l:'Revenue Growth (YoY)',v:'+2.0%',cls:'up'},{l:'EPS Growth (YoY)',v:'+8.4%',cls:'up'},
-        {l:'FCF Growth (YoY)',v:'+18.0%',cls:'up'},{l:'Gross Profit Growth',v:'+3.4%',cls:'up'},
-        {l:'Revenue (3Y CAGR)',v:'+6.2%',cls:'up'},{l:'EPS (3Y CAGR)',v:'+14.8%',cls:'up'},
-      ],
-      balance:[
-        {l:'Total Assets',v:'$352.6B'},{l:'Total Liabilities',v:'$290.4B'},
-        {l:'Total Equity',v:'$62.1B'},{l:'Net Debt / Cash',v:'-$54.2B'},
-        {l:'Current Ratio',v:'0.99'},{l:'D/E Ratio',v:'1.87'},
-        {l:'Interest Coverage',v:'28.4x'},{l:'Debt/EBITDA',v:'0.8x'},
-      ],
-      share:[
-        {l:'Shares Outstanding',v:'15.44B'},{l:'Float',v:'15.43B'},
-        {l:'Short Interest',v:'0.72%'},{l:'Short Ratio (days)',v:'1.4'},
-        {l:'Insider Own.',v:'2.4%'},{l:'Instit. Own.',v:'59.8%'},
-        {l:'Buyback (2023)',v:'$77.5B'},{l:'Dividend Yield',v:'0.54%'},
-      ],
-    },
-    tech:{
-      price:189.45, ma_summary:'Buy', osc_summary:'Neutral', overall:'Buy',
-      ma:[
-        {n:'SMA 5',v:188.20,sig:'Buy'},{n:'SMA 10',v:185.40,sig:'Buy'},{n:'SMA 20',v:183.60,sig:'Buy'},
-        {n:'SMA 50',v:178.90,sig:'Buy'},{n:'SMA 100',v:172.30,sig:'Buy'},{n:'SMA 200',v:168.40,sig:'Buy'},
-        {n:'EMA 5',v:188.60,sig:'Buy'},{n:'EMA 10',v:186.10,sig:'Buy'},{n:'EMA 20',v:184.20,sig:'Buy'},
-        {n:'EMA 50',v:179.40,sig:'Buy'},{n:'EMA 100',v:173.10,sig:'Buy'},{n:'EMA 200',v:169.20,sig:'Buy'},
-      ],
-      indicators:[
-        {n:'RSI (14)',v:'58.4',sig:'Neutral'},{n:'MACD (12,26)',v:'+1.84',sig:'Buy'},
-        {n:'Stochastic %K',v:'72.3',sig:'Neutral'},{n:'CCI (20)',v:'+88.4',sig:'Buy'},
-        {n:'ADX (14)',v:'24.8',sig:'Buy'},{n:'Williams %R',v:'-28.4',sig:'Neutral'},
-        {n:'ATR (14)',v:'3.42',sig:'N/A'},{n:'Bull/Bear Power',v:'+2.14',sig:'Buy'},
-        {n:'Ultimate Osc.',v:'62.4',sig:'Buy'},{n:'Momentum (10)',v:'+4.2',sig:'Buy'},
-      ],
-      pivots:[
-        {m:'Classic',s3:175.20,s2:180.10,s1:184.80,p:189.45,r1:194.10,r2:198.80,r3:203.50},
-        {m:'Fibonacci',s3:176.40,s2:181.30,s1:185.10,p:189.45,r1:193.80,r2:197.60,r3:202.50},
-        {m:'Camarilla',s3:186.10,s2:187.40,s1:188.40,p:189.45,r1:190.50,r2:191.50,r3:192.80},
-        {m:'Woodie',s3:174.80,s2:179.90,s1:184.60,p:189.70,r1:194.30,r2:199.20,r3:204.00},
-      ],
-    },
-    earnings:{
-      history:[
-        {q:'Q2 2024',epsEst:1.35,epsAct:1.40,epsSurp:+3.7,revEst:'$84.3B',revAct:'$85.8B',beat:true},
-        {q:'Q1 2024',epsEst:2.10,epsAct:2.18,epsSurp:+3.8,revEst:'$117.9B',revAct:'$119.6B',beat:true},
-        {q:'Q4 2023',epsEst:1.31,epsAct:1.29,epsSurp:-1.5,revEst:'$89.3B',revAct:'$89.5B',beat:false},
-        {q:'Q3 2023',epsEst:1.20,epsAct:1.26,epsSurp:+5.0,revEst:'$81.7B',revAct:'$83.0B',beat:true},
-        {q:'Q2 2023',epsEst:1.18,epsAct:1.26,epsSurp:+6.8,revEst:'$81.5B',revAct:'$81.8B',beat:true},
-        {q:'Q1 2023',epsEst:1.92,epsAct:2.18,epsSurp:+13.5,revEst:'$121.1B',revAct:'$117.2B',beat:false},
-        {q:'Q4 2022',epsEst:1.99,epsAct:1.88,epsSurp:-5.5,revEst:'$97.8B',revAct:'$97.3B',beat:false},
-        {q:'Q3 2022',epsEst:1.15,epsAct:1.29,epsSurp:+12.2,revEst:'$82.8B',revAct:'$90.1B',beat:true},
-      ],
-      fwdEps:[
-        {period:'Q3 2024',est:1.34,high:1.48,low:1.22,analysts:32},
-        {period:'Q4 2024',est:2.40,high:2.60,low:2.18,analysts:34},
-        {period:'FY 2024',est:6.58,high:7.10,low:6.10,analysts:38},
-        {period:'FY 2025',est:7.24,high:8.00,low:6.60,analysts:36},
-      ],
-    },
-    ownership:{
-      institutional:59.8, insider:2.4, public:37.8,
-      instStats:[
-        {l:'Institutions',v:'59.8%'},{l:'Shares Held',v:'9.22B'},
-        {l:'New Positions',v:'+284'},{l:'Reduced Positions',v:'-198'},
-      ],
-      institutions:[
-        {n:'Vanguard Group',shares:'1.34B',pct:'8.92%',chg:'+12M',cls:'up'},
-        {n:'BlackRock Inc.',shares:'1.05B',pct:'7.04%',chg:'-8M',cls:'dn'},
-        {n:'Berkshire Hathaway',shares:'905M',pct:'6.03%',chg:'0',cls:''},
-        {n:'State Street Corp',shares:'590M',pct:'3.93%',chg:'+3M',cls:'up'},
-        {n:'Fidelity Mgmt.',shares:'340M',pct:'2.27%',chg:'+21M',cls:'up'},
-        {n:'Geode Capital',shares:'248M',pct:'1.65%',chg:'+4M',cls:'up'},
-        {n:'Capital Group',shares:'210M',pct:'1.40%',chg:'-6M',cls:'dn'},
-        {n:'T. Rowe Price',shares:'188M',pct:'1.25%',chg:'+8M',cls:'up'},
-      ],
-      hedgeFunds:[
-        {n:'Berkshire Hathaway',shares:905.0,chg:'0.0%',action:'Holding'},
-        {n:'Citadel Advisors',shares:22.4,chg:'+18.2%',action:'Buying'},
-        {n:'D.E. Shaw',shares:18.6,chg:'+4.8%',action:'Buying'},
-        {n:'Two Sigma',shares:14.2,chg:'-2.1%',action:'Reducing'},
-      ],
-      insiders:[
-        {name:'T. Cook',title:'CEO',type:'Sell',shares:'511K',value:'$95.4M',date:'Jun 3 2024'},
-        {name:'L. Maestri',title:'CFO',type:'Sell',shares:'240K',value:'$44.9M',date:'May 15 2024'},
-        {name:'J. Williams',title:'COO',type:'Buy',shares:'12K',value:'$2.2M',date:'Apr 10 2024'},
-        {name:'K. Adams',title:'CLO',type:'Sell',shares:'60K',value:'$11.2M',date:'Mar 28 2024'},
-      ],
-    },
-    dividends:{ yield:0.54, annualAmt:1.00, payoutRatio:'16%', exDate:'Aug 9, 2024', payDate:'Aug 15, 2024',
-      consecutive:12, growth5yr:'+5.4%/yr',
-      history:[
-        {ex:'May 10, 2024',amt:'$0.25',pay:'May 16, 2024',yld:'0.53%'},
-        {ex:'Feb 9, 2024',amt:'$0.24',pay:'Feb 15, 2024',yld:'0.50%'},
-        {ex:'Nov 10, 2023',amt:'$0.24',pay:'Nov 16, 2023',yld:'0.52%'},
-        {ex:'Aug 11, 2023',amt:'$0.24',pay:'Aug 17, 2023',yld:'0.49%'},
-        {ex:'May 12, 2023',amt:'$0.24',pay:'May 18, 2023',yld:'0.51%'},
-        {ex:'Feb 10, 2023',amt:'$0.23',pay:'Feb 16, 2023',yld:'0.55%'},
-      ],
-    },
-    perf:{ '1D':'+1.24%','1W':'+2.1%','1M':'+4.8%','3M':'+6.2%','YTD':'+8.1%','1Y':'+18.4%','3Y':'+42.1%','5Y':'+292.4%' },
-    short:{ shortPct:'0.72%', shortShares:'111.2M', daysTocover:'1.4', shortRatio:'0.72%' },
-  },
-};
-// Fill missing tickers with AAPL-like defaults
-['MSFT','NVDA','JPM'].forEach(t => {
-  if(!STOCK_DETAIL_DATA[t]) STOCK_DETAIL_DATA[t] = {...STOCK_DETAIL_DATA.AAPL,
-    ticker:t, name:t==='MSFT'?'Microsoft Corp.':t==='NVDA'?'NVIDIA Corp.':'JPMorgan Chase',
-    smartScore:t==='NVDA'?9:t==='MSFT'?9:8};
-});
-
 // ═══════════════════════════════════
 // DATA
 // ═══════════════════════════════════
@@ -2541,605 +1900,17 @@ function buildFunds() {
 // ═══════════════════════════════════
 // OPEN STOCK
 // ═══════════════════════════════════
-let currentStockTicker = 'AAPL';
-
 function openStock(ticker) {
   const s = STOCKS.find(x => x.t === ticker) || STOCKS[0];
-  currentStockTicker = s.t;
-  const cls = s.c >= 0 ? 'up' : 'dn';
-  const sign = s.c >= 0 ? '▲ +' : '▼ ';
-  const dollarChg = (s.p * Math.abs(s.c) / 100).toFixed(2);
-
   document.getElementById('stock-title').textContent = s.n + ' (' + s.t + ')';
   document.getElementById('sq-name').textContent = s.n;
-  document.getElementById('sq-meta').textContent = s.t + ' · ' + (s.t==='AAPL'||s.t==='MSFT'||s.t==='NVDA'||s.t==='GOOGL'||s.t==='TSLA'?'NASDAQ':'NYSE') + ' · ' + s.s;
   document.getElementById('sq-price').textContent = '$' + s.p.toFixed(2);
-  document.getElementById('sq-price').className = 'quote-price ' + cls;
-  document.getElementById('sq-chg').textContent = sign + '$' + dollarChg + ' (' + (s.c>=0?'+':'') + s.c.toFixed(2) + '%)';
-  document.getElementById('sq-chg').className = 'quote-change ' + cls;
-  document.getElementById('sq-high').textContent = '$' + (s.p * 1.004).toFixed(2);
-  document.getElementById('sq-low').textContent  = '$' + (s.p * 0.990).toFixed(2);
-  document.getElementById('sq-open').textContent = '$' + (s.p * 0.996).toFixed(2);
-  document.getElementById('sq-prev').textContent = '$' + (s.p / (1 + s.c/100)).toFixed(2);
-  document.getElementById('sq-vol').textContent  = s.v;
-  document.getElementById('sq-avgvol').textContent = s.v;
-  document.getElementById('sq-mc').textContent   = s.mc;
-  const dd = STOCK_DETAIL_DATA[s.t] || STOCK_DETAIL_DATA['AAPL'];
-  document.getElementById('sq-beta').textContent = dd.stats && dd.stats.balance ? (dd.stats.balance.find(x=>x.l.includes('D/E'))||{v:'1.2'}).v : '1.2';
-  // 52W
-  const hi52 = (s.p * 1.15).toFixed(2), lo52 = (s.p * 0.72).toFixed(2);
-  const pct52 = Math.round(((s.p - parseFloat(lo52)) / (parseFloat(hi52) - parseFloat(lo52))) * 100);
-  document.getElementById('sq-52h').textContent = '$' + hi52;
-  document.getElementById('sq-52l').textContent = '$' + lo52;
-  document.getElementById('sq-52pos').style.width = pct52 + '%';
-  document.getElementById('sq-52cur').style.left = (pct52-2) + '%';
-  document.getElementById('sq-52pct').textContent = pct52 + '% of 52W range';
-  // Smart score
-  const sc = dd.smartScore || s.score;
-  const srEl = document.getElementById('sq-smart-ring');
-  srEl.className = 'smart-ring score-' + sc;
-  document.getElementById('sq-smart-num').textContent = sc;
-  document.getElementById('sq-smart-lbl').textContent = dd.smartVerdict || (sc>=8?'Outperform':sc>=6?'Neutral':'Underperform');
-
+  document.getElementById('sq-chg').textContent = (s.c>=0?'▲ +':'▼ -') + '$' + (s.p*Math.abs(s.c)/100).toFixed(2) + ' (' + (s.c>=0?'+':'') + s.c.toFixed(2) + '%)';
+  document.getElementById('sq-chg').className = 'quote-change ' + (s.c>=0?'up':'dn');
+  document.getElementById('sq-high').textContent = '$' + (s.p*1.004).toFixed(2);
+  document.getElementById('sq-low').textContent = '$' + (s.p*0.990).toFixed(2);
   nav('stock');
-  // Reset to tab 0
-  document.querySelectorAll('#stock-tabs-nav .stock-tab').forEach((t,i)=>t.classList.toggle('active',i===0));
-  document.querySelectorAll('.stock-tab-content').forEach((c,i)=>c.classList.toggle('active',i===0));
-  buildStockOverview(s.t);
-  buildChartPanels(s.t);
-  setTimeout(drawStockChart, 80);
-}
-
-function stockTab(el, idx) {
-  document.querySelectorAll('#stock-tabs-nav .stock-tab').forEach(t=>t.classList.remove('active'));
-  document.querySelectorAll('.stock-tab-content').forEach(c=>c.classList.remove('active'));
-  el.classList.add('active');
-  document.getElementById('sdt-'+idx).classList.add('active');
-  const t = currentStockTicker;
-  if(idx===1) setTimeout(drawStockChart,80);
-  else if(idx===2) buildFinancials(t);
-  else if(idx===3) buildStatistics(t);
-  else if(idx===4) buildTechnical(t);
-  else if(idx===5) buildEarnings(t);
-  else if(idx===6) buildOwnership(t);
-  else if(idx===7) buildDividends(t);
-  else if(idx===8) buildOptionsChain();
-  else if(idx===9) buildStockNews();
-}
-
-// ── OVERVIEW TAB ──────────────────────────────────
-function buildStockOverview(ticker) {
-  const d = STOCK_DETAIL_DATA[ticker] || STOCK_DETAIL_DATA['AAPL'];
-
-  // AI text
-  document.getElementById('ov-ai-text').innerHTML = d.aiText;
-
-  // Smart Score
-  const sc = d.smartScore;
-  const ovRing = document.getElementById('ov-smart-ring');
-  ovRing.className = 'smart-ring score-' + sc;
-  document.getElementById('ov-smart-num').textContent = sc;
-  document.getElementById('ov-smart-verdict').textContent = d.smartVerdict;
-  document.getElementById('ov-smart-verdict').className = sc>=7?'up':sc>=5?'':' dn';
-
-  // Score factors
-  const sfEl = document.getElementById('ov-score-factors');
-  sfEl.innerHTML = d.scoreFactors.map(f=>`
-    <div style="font-size:10px;color:var(--text2)">
-      <div style="display:flex;justify-content:space-between;margin-bottom:1px">
-        <span>${f.name}</span><span style="color:${f.clr}">${f.val}</span>
-      </div>
-      <div style="height:2px;background:var(--bg4);border-radius:1px;overflow:hidden">
-        <div style="width:${f.pct}%;height:100%;background:${f.clr};border-radius:1px"></div>
-      </div>
-    </div>`).join('');
-
-  // Analyst consensus
-  const totalA = d.analystCount;
-  const bPct = Math.round(d.buy/totalA*100), hPct = Math.round(d.hold/totalA*100), sPct = 100-bPct-hPct;
-  document.getElementById('ov-cons-verdict').textContent = d.analystConsensus;
-  document.getElementById('ov-cons-count').textContent = totalA + ' analysts';
-  document.getElementById('ov-buy-cnt').textContent = d.buy + ' Buy';
-  document.getElementById('ov-hold-cnt').textContent = d.hold + ' Hold';
-  document.getElementById('ov-sell-cnt').textContent = d.sell + ' Sell';
-  document.getElementById('ov-cons-bar').innerHTML =
-    `<div class="cb-buy" style="width:${bPct}%"></div><div class="cb-hold" style="width:${hPct}%"></div><div class="cb-sell" style="width:${sPct}%"></div>`;
-
-  // Price target
-  const range = d.ptHigh - d.ptLow;
-  const curPct = Math.round(((d.ptCurrent - d.ptLow) / range) * 90);
-  const avgPct = Math.round(((d.ptAvg - d.ptLow) / range) * 90);
-  const upside = (((d.ptAvg - d.ptCurrent) / d.ptCurrent) * 100).toFixed(1);
-  document.getElementById('ov-pt-avg').textContent = '$' + d.ptAvg;
-  document.getElementById('ov-pt-cur').textContent = '$' + Math.round(d.ptCurrent);
-  document.getElementById('ov-pt-low').textContent = 'Low $' + d.ptLow;
-  document.getElementById('ov-pt-high').textContent = 'High $' + d.ptHigh;
-  document.getElementById('ov-pt-cur-dot').style.left = curPct + '%';
-  document.getElementById('ov-pt-avg-dot').style.left = avgPct + '%';
-  document.getElementById('ov-pt-upside').textContent = (upside>0?'+':'') + upside + '% ' + (upside>0?'upside':'downside');
-  document.getElementById('ov-pt-upside').className = upside>0?'up':'dn';
-
-  // Analyst list
-  document.getElementById('ov-analyst-list').innerHTML = d.analysts.map(a=>`
-    <div class="analyst-card">
-      <div style="flex:1">
-        <div class="analyst-firm">${a.firm}</div>
-        <div class="analyst-analyst">${a.analyst} · ${a.date}</div>
-        <div class="analyst-action">${a.action}</div>
-      </div>
-      <div style="text-align:right">
-        <div class="${a.rating.includes('Overweight')||a.rating.includes('Buy')?'badge badge-buy':a.rating.includes('Under')?'badge badge-sell':'badge badge-hold'}">${a.rating}</div>
-        <div class="analyst-pt" style="margin-top:3px">${a.pt}</div>
-      </div>
-    </div>`).join('');
-
-  // Quant grades
-  document.getElementById('ov-quant-grades').innerHTML = d.quantGrades.map(g=>{
-    const gKey = g.grade.replace('+','plus').replace('-','minus');
-    return `<div class="qfactor">
-      <div class="grade grade-${gKey}">${g.grade}</div>
-      <div class="qfactor-info">
-        <div class="qfactor-name">${g.factor}</div>
-        <div class="qfactor-sub">${g.sub}</div>
-        <div class="qfactor-bar"><div class="qfactor-fill" style="width:${g.pct}%;background:${g.pct>75?'var(--green)':g.pct>50?'var(--blue)':g.pct>30?'var(--gold)':'var(--red)'}"></div></div>
-      </div>
-    </div>`;}).join('');
-
-  // Financial snap
-  document.getElementById('ov-fin-snap').innerHTML = d.finSnap.map(f=>`
-    <div class="stat"><div class="stat-label">${f.label}</div><div class="stat-val">${f.val}</div><div class="stat-sub ${f.cls}">${f.sub}</div></div>`).join('');
-
-  // Description + tags
-  document.getElementById('ov-desc').textContent = d.desc;
-  document.getElementById('ov-tags').innerHTML = d.tags.map(t=>`<span class="sector-tag">${t}</span>`).join('');
-}
-
-// ── FINANCIALS TAB ────────────────────────────────
-let finStatement = 'IS', finPeriodMode = 'annual';
-
-const FIN_DATA = {
-  TSLA: {
-    IS:{
-      annual:{
-        cols:['FY2023','FY2022','FY2021','FY2020','FY2019'],
-        rows:[
-          {label:'Revenue',sec:false,vals:['97,690','81,462','53,823','31,536','24,578']},
-          {label:'  Automotive',sec:false,vals:['82,418','71,462','47,232','27,236','20,821']},
-          {label:'  Services & Other',sec:false,vals:['15,272','10,000','6,591','4,300','3,757']},
-          {label:'Cost of Revenue',sec:false,vals:['79,113','60,609','40,217','24,906','20,509']},
-          {label:'Gross Profit',sec:false,vals:['17,660','20,853','13,606','6,630','4,069']},
-          {label:'Gross Margin %',sec:false,vals:['18.1%','25.6%','25.3%','21.0%','16.6%']},
-          {label:'R&D Expenses',sec:false,vals:['3,969','3,075','2,593','1,491','1,343']},
-          {label:'SG&A Expenses',sec:false,vals:['4,800','3,946','2,646','1,800','1,394']},
-          {label:'Operating Income',sec:false,vals:['8,891','13,656','6,523','1,994','69']},
-          {label:'Operating Margin %',sec:false,vals:['9.1%','16.8%','12.1%','6.3%','0.3%']},
-          {label:'Net Income',sec:false,vals:['14,974','12,556','5,644','721','-862']},
-          {label:'EPS Diluted ($)',sec:false,vals:['4.73','4.07','1.87','0.25','-0.33']},
-          {label:'EBITDA',sec:false,vals:['13,656','14,800','8,980','3,194','948']},
-        ]
-      },
-      quarterly:{
-        cols:['Q1 2024','Q4 2023','Q3 2023','Q2 2023','Q1 2023','Q4 2022','Q3 2022','Q2 2022'],
-        rows:[
-          {label:'Revenue',sec:false,vals:['21,301','25,167','23,350','24,927','23,329','24,318','21,454','16,934']},
-          {label:'Gross Profit',sec:false,vals:['3,696','4,438','4,178','4,533','4,511','5,777','5,383','4,234']},
-          {label:'Gross Margin %',sec:false,vals:['17.4%','17.6%','17.9%','18.2%','19.3%','23.8%','25.1%','25.0%']},
-          {label:'Operating Income',sec:false,vals:['1,171','2,064','1,764','3,148','3,295','3,901','3,688','2,464']},
-          {label:'Net Income',sec:false,vals:['1,129','7,928','1,853','2,703','2,513','3,687','3,292','2,259']},
-          {label:'EPS Diluted ($)',sec:false,vals:['0.45','2.27','0.66','0.91','0.85','1.07','1.05','2.27']},
-        ]
-      }
-    },
-    BS:{
-      annual:{
-        cols:['FY2023','FY2022','FY2021','FY2020'],
-        rows:[
-          {label:'ASSETS',sec:true,vals:['','','','']},
-          {label:'Cash & Equivalents',sec:false,vals:['16,398','16,253','17,576','19,384']},
-          {label:'Short-Term Invest.',sec:false,vals:['12,696','5,932','131','133']},
-          {label:'Total Current Assets',sec:false,vals:['49,616','40,917','26,680','26,717']},
-          {label:'PP&E (Net)',sec:false,vals:['29,725','23,716','18,884','12,747']},
-          {label:'Total Assets',sec:false,vals:['106,618','82,338','62,131','52,148']},
-          {label:'LIABILITIES',sec:true,vals:['','','','']},
-          {label:'Accounts Payable',sec:false,vals:['14,431','13,933','10,025','6,051']},
-          {label:'Total Current Liab.',sec:false,vals:['28,748','26,709','19,705','14,248']},
-          {label:'Long-Term Debt',sec:false,vals:['2,857','3,148','6,129','9,556']},
-          {label:'Total Liabilities',sec:false,vals:['46,361','36,440','30,748','28,469']},
-          {label:'Total Equity',sec:false,vals:['62,634','44,704','30,189','22,225']},
-        ]
-      },
-      quarterly:{ cols:['Q1 2024','Q4 2023','Q3 2023','Q2 2023'],
-        rows:[
-          {label:'Total Assets',sec:false,vals:['112,832','106,618','93,941','91,732']},
-          {label:'Cash & Equivalents',sec:false,vals:['18,420','16,398','14,832','11,485']},
-          {label:'Total Liabilities',sec:false,vals:['47,840','46,361','41,404','40,842']},
-          {label:'Total Equity',sec:false,vals:['66,830','62,634','55,008','52,182']},
-        ]
-      }
-    },
-    CF:{
-      annual:{
-        cols:['FY2023','FY2022','FY2021','FY2020'],
-        rows:[
-          {label:'Operating Cash Flow',sec:false,vals:['13,256','14,485','11,497','5,943']},
-          {label:'CapEx',sec:false,vals:['-8,898','-7,158','-6,515','-3,232']},
-          {label:'Free Cash Flow',sec:false,vals:['4,358','7,327','4,982','2,711']},
-          {label:'Investing Cash Flow',sec:false,vals:['-10,884','-8,033','-7,158','-3,416']},
-          {label:'Financing Cash Flow',sec:false,vals:['-2,614','-3,619','-4,457','+9,973']},
-          {label:'Net Change in Cash',sec:false,vals:['-242','835','147','12,500']},
-        ]
-      },
-      quarterly:{ cols:['Q1 2024','Q4 2023','Q3 2023','Q2 2023'],
-        rows:[
-          {label:'Operating CF',sec:false,vals:['242','4,370','3,308','3,065']},
-          {label:'Free Cash Flow',sec:false,vals:['-2,532','2,066','848','1,000']},
-          {label:'CapEx',sec:false,vals:['-2,774','-2,304','-2,460','-2,065']},
-        ]
-      }
-    }
-  },
-  AAPL:{
-    IS:{
-      annual:{
-        cols:['FY2023','FY2022','FY2021','FY2020','FY2019'],
-        rows:[
-          {label:'Revenue',sec:false,vals:['383,285','394,328','365,817','274,515','260,174']},
-          {label:'  Products',sec:false,vals:['298,085','316,199','297,392','220,747','213,883']},
-          {label:'  Services',sec:false,vals:['85,200','78,129','68,425','53,768','46,291']},
-          {label:'Cost of Revenue',sec:false,vals:['214,137','223,546','212,981','169,559','161,782']},
-          {label:'Gross Profit',sec:false,vals:['169,148','170,782','152,836','104,956','98,392']},
-          {label:'Gross Margin %',sec:false,vals:['44.1%','43.3%','41.8%','38.2%','37.8%']},
-          {label:'R&D Expenses',sec:false,vals:['29,915','26,251','21,914','18,752','16,217']},
-          {label:'SG&A Expenses',sec:false,vals:['24,932','25,094','21,973','19,916','18,245']},
-          {label:'Operating Income',sec:false,vals:['114,301','119,437','108,949','66,288','63,930']},
-          {label:'Operating Margin %',sec:false,vals:['29.8%','30.3%','29.8%','24.1%','24.6%']},
-          {label:'Net Income',sec:false,vals:['96,995','99,803','94,680','57,411','55,256']},
-          {label:'EPS Diluted ($)',sec:false,vals:['6.13','6.11','5.61','3.28','2.97']},
-          {label:'EBITDA',sec:false,vals:['123,430','130,090','120,233','77,344','76,477']},
-        ]
-      },
-      quarterly:{
-        cols:['Q2 2024','Q1 2024','Q4 2023','Q3 2023','Q2 2023','Q1 2023','Q4 2022','Q3 2022'],
-        rows:[
-          {label:'Revenue',sec:false,vals:['85,777','119,575','89,498','81,797','94,836','117,154','97,278','90,146']},
-          {label:'Gross Profit',sec:false,vals:['38,953','54,873','40,427','36,413','42,559','52,595','42,298','38,102']},
-          {label:'Gross Margin %',sec:false,vals:['45.4%','45.9%','45.2%','44.5%','44.9%','44.9%','43.5%','42.3%']},
-          {label:'Operating Income',sec:false,vals:['28,672','40,886','29,516','28,342','28,318','36,016','29,999','26,143']},
-          {label:'Net Income',sec:false,vals:['21,448','33,916','22,956','19,881','24,160','29,998','20,721','19,442']},
-          {label:'EPS Diluted ($)',sec:false,vals:['1.40','2.18','1.46','1.26','1.52','1.88','1.29','1.20']},
-        ]
-      }
-    },
-    BS:{
-      annual:{ cols:['FY2023','FY2022','FY2021','FY2020'],
-        rows:[
-          {label:'ASSETS',sec:true,vals:['','','','']},
-          {label:'Cash & Equivalents',sec:false,vals:['29,965','23,646','34,940','38,016']},
-          {label:'Short-Term Invest.',sec:false,vals:['31,590','24,658','27,699','52,927']},
-          {label:'Total Current Assets',sec:false,vals:['143,566','135,405','134,836','143,713']},
-          {label:'PP&E (Net)',sec:false,vals:['43,715','42,117','39,440','36,766']},
-          {label:'Total Assets',sec:false,vals:['352,583','352,755','351,002','323,888']},
-          {label:'LIABILITIES',sec:true,vals:['','','','']},
-          {label:'Total Current Liab.',sec:false,vals:['145,308','153,982','125,481','105,392']},
-          {label:'Long-Term Debt',sec:false,vals:['95,281','98,959','109,106','98,667']},
-          {label:'Total Liabilities',sec:false,vals:['290,437','302,083','287,912','258,578']},
-          {label:'Total Equity',sec:false,vals:['62,146','50,672','63,090','65,339']},
-        ]
-      },
-      quarterly:{ cols:['Q2 2024','Q1 2024','Q4 2023','Q3 2023'],
-        rows:[
-          {label:'Total Assets',sec:false,vals:['337,411','353,514','352,583','335,038']},
-          {label:'Cash & Investments',sec:false,vals:['153,160','162,340','143,566','148,250']},
-          {label:'Total Liabilities',sec:false,vals:['279,424','290,872','290,437','274,764']},
-          {label:'Total Equity',sec:false,vals:['66,708','74,194','62,146','60,274']},
-        ]
-      }
-    },
-    CF:{
-      annual:{ cols:['FY2023','FY2022','FY2021','FY2020'],
-        rows:[
-          {label:'Operating Cash Flow',sec:false,vals:['110,543','122,151','104,038','80,674']},
-          {label:'CapEx',sec:false,vals:['-10,959','-10,708','-11,085','-7,309']},
-          {label:'Free Cash Flow',sec:false,vals:['99,584','111,443','92,953','73,365']},
-          {label:'Investing Cash Flow',sec:false,vals:['-3,795','-22,354','-14,545','-45,977']},
-          {label:'Financing Cash Flow',sec:false,vals:['-108,488','-110,749','-93,353','-86,820']},
-          {label:'Dividends Paid',sec:false,vals:['-15,025','-14,841','-14,467','-14,081']},
-          {label:'Buybacks',sec:false,vals:['-77,550','-89,402','-85,971','-72,358']},
-        ]
-      },
-      quarterly:{ cols:['Q2 2024','Q1 2024','Q4 2023','Q3 2023'],
-        rows:[
-          {label:'Operating CF',sec:false,vals:['28,218','38,760','29,869','21,228']},
-          {label:'Free Cash Flow',sec:false,vals:['25,154','35,593','25,975','18,184']},
-          {label:'CapEx',sec:false,vals:['-3,064','-3,167','-3,894','-3,044']},
-        ]
-      }
-    }
-  }
-};
-
-function finSwitch(stmt) {
-  finStatement = stmt;
-  ['IS','BS','CF'].forEach(s=>document.getElementById('fin-'+s.toLowerCase()+'-btn').classList.toggle('active',s===stmt));
-  renderFinTable();
-}
-function finPeriod(mode) {
-  finPeriodMode = mode;
-  document.getElementById('fin-ann-btn').classList.toggle('active',mode==='annual');
-  document.getElementById('fin-qtr-btn').classList.toggle('active',mode==='quarterly');
-  renderFinTable();
-}
-function buildFinancials(ticker) {
-  finStatement = 'IS'; finPeriodMode = 'annual';
-  ['IS','BS','CF'].forEach(s=>document.getElementById('fin-'+s.toLowerCase()+'-btn').classList.toggle('active',s==='IS'));
-  document.getElementById('fin-ann-btn').classList.add('active');
-  document.getElementById('fin-qtr-btn').classList.remove('active');
-  renderFinTable();
-}
-function renderFinTable() {
-  const t = currentStockTicker;
-  const data = (FIN_DATA[t] || FIN_DATA['AAPL'])[finStatement][finPeriodMode];
-  const { cols, rows } = data;
-  let h = `<div class="fin-tbl-wrap"><table class="fin-tbl"><thead><tr><th>${finStatement==='IS'?'Income Statement':finStatement==='BS'?'Balance Sheet':'Cash Flow'} (USD M)</th>`;
-  cols.forEach(c=>h+=`<th>${c}</th>`);
-  h += '</tr></thead><tbody>';
-  rows.forEach(r=>{
-    if(r.sec){ h+=`<tr class="fin-section-hdr"><td colspan="${cols.length+1}">${r.label}</td></tr>`; return; }
-    const isPct = r.label.includes('%');
-    h += `<tr><td>${r.label}</td>`;
-    r.vals.forEach(v=>{
-      const isNeg = v.startsWith('-');
-      const isPos = !isNeg && !isPct && parseFloat(v.replace(/,/g,''))>0 && r.label.includes('Cash Flow');
-      h += `<td ${isNeg?'class="dn"':isPos?'class="up"':''}>${isPct?v:(v===''?'':v)}</td>`;
-    });
-    h += '</tr>';
-  });
-  h += '</tbody></table></div>';
-  document.getElementById('fin-table-wrap').innerHTML = h;
-}
-
-// ── STATISTICS TAB ────────────────────────────────
-function buildStatistics(ticker) {
-  const d = STOCK_DETAIL_DATA[ticker] || STOCK_DETAIL_DATA['AAPL'];
-  const sections = [
-    {title:'Valuation Metrics', rows:d.stats.valuation},
-    {title:'Profitability', rows:d.stats.profitability},
-    {title:'Growth', rows:d.stats.growth},
-    {title:'Balance Sheet', rows:d.stats.balance},
-    {title:'Share Statistics', rows:d.stats.share},
-  ];
-  document.getElementById('stats-grid').innerHTML = sections.map(sec=>`
-    <div class="stat-group">
-      <div class="stat-group-title">${sec.title}</div>
-      <div class="stat-row2">${sec.rows.map(r=>`
-        <div class="stat-line">
-          <span class="stat-line-lbl">${r.l}</span>
-          <span class="stat-line-val ${r.cls||''}">${r.v}</span>
-        </div>`).join('')}
-      </div>
-    </div>`).join('');
-}
-
-// ── TECHNICAL TAB ─────────────────────────────────
-function buildTechnical(ticker) {
-  const d = (STOCK_DETAIL_DATA[ticker]||STOCK_DETAIL_DATA['AAPL']).tech;
-  const price = d.price;
-
-  // Gauges
-  function makeGauge(label, value, summary) {
-    const isB = summary==='Buy'||summary==='Strong Buy';
-    const isS = summary==='Sell'||summary==='Strong Sell';
-    const col  = isB?'#00d4a1':isS?'#ff4d6a':'#f59e0b';
-    // angle: Sell=-120deg, Neutral=0, Buy=+120deg
-    const angle = isB?80:isS?-80:0;
-    const rad = (angle-90)*Math.PI/180;
-    const cx=60,cy=60,r=44;
-    const nx=cx+r*Math.cos(rad), ny=cy+r*Math.sin(rad);
-    return `<div class="gauge-wrap">
-      <svg width="120" height="70" viewBox="0 0 120 75">
-        <defs><linearGradient id="gr-${label.replace(/\s/g,'')}" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" style="stop-color:#ff4d6a"/><stop offset="50%" style="stop-color:#f59e0b"/>
-          <stop offset="100%" style="stop-color:#00d4a1"/>
-        </linearGradient></defs>
-        <path d="M10,65 A50,50 0 0,1 110,65" fill="none" stroke="url(#gr-${label.replace(/\s/g,'')})" stroke-width="8" stroke-linecap="round"/>
-        <line x1="60" y1="65" x2="${nx.toFixed(1)}" y2="${ny.toFixed(1)}" stroke="${col}" stroke-width="2.5" stroke-linecap="round"/>
-        <circle cx="60" cy="65" r="4" fill="${col}"/>
-      </svg>
-      <div class="gauge-label">${label}</div>
-      <div class="gauge-val ${isB?'buy-val':isS?'sell-val':'neu-val'}">${summary}</div>
-    </div>`;
-  }
-
-  // Count signals
-  const allSig = [...d.ma, ...d.indicators];
-  const buys = allSig.filter(x=>x.sig==='Buy').length;
-  const sells = allSig.filter(x=>x.sig==='Sell').length;
-  const maBuys = d.ma.filter(x=>x.sig==='Buy').length;
-  const maSells = d.ma.filter(x=>x.sig==='Sell').length;
-  const oscBuys = d.indicators.filter(x=>x.sig==='Buy').length;
-  const oscSells = d.indicators.filter(x=>x.sig==='Sell').length;
-
-  const overall = buys > sells*1.5 ? 'Strong Buy' : buys > sells ? 'Buy' : sells > buys*1.5 ? 'Strong Sell' : sells > buys ? 'Sell' : 'Neutral';
-  const maSum   = maBuys > maSells ? 'Buy' : maSells > maBuys ? 'Sell' : 'Neutral';
-  const oscSum  = oscBuys > oscSells ? 'Buy' : oscSells > oscBuys ? 'Sell' : 'Neutral';
-
-  document.getElementById('tech-gauges').innerHTML = [
-    makeGauge('Moving Averages', null, maSum),
-    makeGauge('Overall Summary', null, overall),
-    makeGauge('Oscillators', null, oscSum),
-  ].join('') + `<div style="font-size:11px;color:var(--text3);text-align:center;align-self:flex-end;padding-bottom:8px">
-    <span class="up">${buys} Buy</span> · <span style="color:var(--gold)">${allSig.length-buys-sells} Neutral</span> · <span class="dn">${sells} Sell</span>
-  </div>`;
-
-  // MA table
-  const maBody = document.querySelector('#tech-ma-tbl tbody');
-  maBody.innerHTML = d.ma.map(m=>{
-    const sig = m.sig==='Buy'?'sig-buy':m.sig==='Sell'?'sig-sell':'sig-neu';
-    const diff = ((price-m.v)/m.v*100).toFixed(2);
-    return `<tr><td>${m.n}</td><td>$${m.v.toFixed(2)} <span style="font-size:10px;color:var(--text3)">(${diff>0?'+':''}${diff}%)</span></td><td class="${sig}">${m.sig}</td></tr>`;
-  }).join('');
-
-  // Indicators table
-  const indBody = document.querySelector('#tech-ind-tbl tbody');
-  indBody.innerHTML = d.indicators.map(i=>{
-    const sig = i.sig==='Buy'?'sig-buy':i.sig==='Sell'?'sig-sell':i.sig==='N/A'?'':' sig-neu';
-    return `<tr><td>${i.n}</td><td>${i.v}</td><td class="${sig}">${i.sig}</td></tr>`;
-  }).join('');
-
-  // Pivot points
-  const pvBody = document.querySelector('#tech-pivot-tbl tbody');
-  pvBody.innerHTML = d.pivots.map(p=>`
-    <tr>
-      <td>${p.m}</td>
-      <td class="dn">$${p.s3}</td><td class="dn">$${p.s2}</td><td class="dn">$${p.s1}</td>
-      <td style="color:var(--gold);font-weight:700">$${p.p}</td>
-      <td class="up">$${p.r1}</td><td class="up">$${p.r2}</td><td class="up">$${p.r3}</td>
-    </tr>`).join('');
-}
-
-// ── EARNINGS TAB ──────────────────────────────────
-let earnChartInst, revChartInst;
-function buildEarnings(ticker) {
-  const d = (STOCK_DETAIL_DATA[ticker]||STOCK_DETAIL_DATA['AAPL']).earnings;
-  const hist = [...d.history].reverse();
-
-  destroyChart(earnChartInst);
-  destroyChart(revChartInst);
-
-  const labels = hist.map(h=>h.q);
-  const epsEst = hist.map(h=>h.epsEst);
-  const epsAct = hist.map(h=>h.epsAct);
-  const chJs = isLight?{bg:'#f0f4f8',grid:'#e2e8f0',text:'#475569'}:{bg:'#111827',grid:'#1a2a40',text:'#94a3b8'};
-
-  earnChartInst = new Chart(document.getElementById('earnings-chart'),{type:'bar',data:{
-    labels, datasets:[
-      {label:'Est.',data:epsEst,backgroundColor:'rgba(59,130,246,.4)',borderColor:'rgba(59,130,246,.8)',borderWidth:1,borderRadius:3},
-      {label:'Actual',data:epsAct,backgroundColor:epsAct.map((v,i)=>v>=epsEst[i]?'rgba(0,212,161,.6)':'rgba(255,77,106,.6)'),borderColor:epsAct.map((v,i)=>v>=epsEst[i]?'rgba(0,212,161,1)':'rgba(255,77,106,1)'),borderWidth:1,borderRadius:3},
-    ]},options:{responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{labels:{color:chJs.text,font:{size:10}}},tooltip:{callbacks:{label:c=>`${c.dataset.label}: $${c.parsed.y.toFixed(2)}`}}},
-      scales:{x:{ticks:{color:chJs.text,font:{size:9}},grid:{color:chJs.grid}},y:{ticks:{color:chJs.text,font:{size:10},callback:v=>'$'+v},grid:{color:chJs.grid}}}}});
-
-  const revEst = hist.map(h=>parseFloat(h.revEst.replace(/[\$B]/g,'')));
-  const revAct = hist.map(h=>parseFloat(h.revAct.replace(/[\$B]/g,'')));
-  revChartInst = new Chart(document.getElementById('revenue-chart'),{type:'bar',data:{
-    labels, datasets:[
-      {label:'Est. (B)',data:revEst,backgroundColor:'rgba(59,130,246,.4)',borderColor:'rgba(59,130,246,.8)',borderWidth:1,borderRadius:3},
-      {label:'Actual (B)',data:revAct,backgroundColor:revAct.map((v,i)=>v>=revEst[i]?'rgba(0,212,161,.6)':'rgba(255,77,106,.6)'),borderColor:revAct.map((v,i)=>v>=revEst[i]?'rgba(0,212,161,1)':'rgba(255,77,106,1)'),borderWidth:1,borderRadius:3},
-    ]},options:{responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{labels:{color:chJs.text,font:{size:10}}}},
-      scales:{x:{ticks:{color:chJs.text,font:{size:9}},grid:{color:chJs.grid}},y:{ticks:{color:chJs.text,font:{size:10},callback:v=>'$'+v+'B'},grid:{color:chJs.grid}}}}});
-
-  // Forward estimates
-  document.querySelector('#fwd-eps-tbl tbody').innerHTML = d.fwdEps.map(f=>`
-    <tr><td>${f.period}</td><td style="font-weight:600">$${f.est.toFixed(2)}</td><td class="up">$${f.high.toFixed(2)}</td><td class="dn">$${f.low.toFixed(2)}</td><td>${f.analysts}</td></tr>`).join('');
-
-  // History
-  document.querySelector('#earn-hist-tbl tbody').innerHTML = d.history.map(h=>{
-    const beat = h.epsSurp >= 0;
-    return `<tr>
-      <td>${h.q}</td><td>$${h.epsEst.toFixed(2)}</td>
-      <td style="font-weight:600;color:${beat?'var(--green)':'var(--red)'}">${h.epsAct >= 0 ? '$' : '-$'}${Math.abs(h.epsAct).toFixed(2)}</td>
-      <td><span class="${beat?'beat':'miss'}">${beat?'+':''}${h.epsSurp.toFixed(1)}%</span></td>
-      <td>${h.revEst}</td><td>${h.revAct}</td>
-    </tr>`;}).join('');
-}
-
-// ── OWNERSHIP TAB ─────────────────────────────────
-let ownDonutInst;
-function buildOwnership(ticker) {
-  const d = (STOCK_DETAIL_DATA[ticker]||STOCK_DETAIL_DATA['AAPL']).ownership;
-  destroyChart(ownDonutInst);
-
-  const chJs = isLight?{bg:'#ffffff',text:'#475569'}:{bg:'#111827',text:'#94a3b8'};
-  ownDonutInst = new Chart(document.getElementById('own-donut'),{type:'doughnut',
-    data:{labels:['Institutional','Insider','Public Float'],
-      datasets:[{data:[d.institutional,d.insider,d.public],backgroundColor:['rgba(59,130,246,.7)','rgba(139,92,246,.7)','rgba(0,212,161,.7)'],borderColor:chJs.bg,borderWidth:2}]},
-    options:{responsive:true,maintainAspectRatio:true,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>`${c.label}: ${c.parsed.toFixed(1)}%`}}}}});
-
-  const cols = ['#3b82f6','#8b5cf6','#00d4a1'];
-  const labels = ['Institutional','Insider','Public Float'];
-  const vals = [d.institutional,d.insider,d.public];
-  document.getElementById('own-legend').innerHTML = labels.map((l,i)=>`
-    <div class="own-leg-item"><div class="own-leg-dot" style="background:${cols[i]}"></div><strong>${vals[i].toFixed(1)}%</strong> ${l}</div>`).join('');
-
-  document.getElementById('own-stats').innerHTML = d.instStats.map(s=>`
-    <div class="stat"><div class="stat-label">${s.l}</div><div class="stat-val">${s.v}</div></div>`).join('');
-
-  // Institutions
-  document.querySelector('#inst-tbl tbody').innerHTML = d.institutions.map(i=>`
-    <tr><td>${i.n}</td><td>${i.shares}</td><td>${i.pct}</td><td class="${i.cls}">${i.chg}</td></tr>`).join('');
-
-  // Hedge Funds
-  document.querySelector('#hf-tbl tbody').innerHTML = d.hedgeFunds.map(h=>`
-    <tr><td>${h.n}</td><td>${h.shares.toFixed(1)}</td>
-    <td class="${h.chg.startsWith('+')?'up':'dn'}">${h.chg}</td>
-    <td><span class="badge ${h.action==='Buying'?'badge-buy':h.action==='Selling'?'badge-sell':'badge-hold'}">${h.action}</span></td>
-    </tr>`).join('');
-
-  // Insiders
-  document.querySelector('#insider-tbl tbody').innerHTML = d.insiders.map(i=>`
-    <tr><td>${i.name}</td><td style="font-size:10px;color:var(--text3)">${i.title}</td>
-    <td><span class="badge ${i.type==='Buy'?'badge-buy':'badge-sell'}">${i.type}</span></td>
-    <td>${i.shares}</td><td>${i.value}</td><td style="font-size:10px;color:var(--text3)">${i.date}</td>
-    </tr>`).join('');
-}
-
-// ── DIVIDENDS TAB ─────────────────────────────────
-let divChartInst;
-function buildDividends(ticker) {
-  const d = (STOCK_DETAIL_DATA[ticker]||STOCK_DETAIL_DATA['AAPL']).dividends;
-  destroyChart(divChartInst);
-
-  document.getElementById('div-yield-big').textContent = d.yield ? d.yield.toFixed(2)+'%' : 'N/A';
-  document.getElementById('div-per-share').textContent = d.annualAmt ? '$'+d.annualAmt.toFixed(2)+' per share/yr' : d.note||'';
-
-  document.getElementById('div-stats').innerHTML = [
-    {l:'Annual Dividend',v:d.annualAmt?'$'+d.annualAmt.toFixed(2):'None'},
-    {l:'Ex-Dividend Date',v:d.exDate||'N/A'},
-    {l:'Pay Date',v:d.payDate||'N/A'},
-    {l:'Payout Ratio',v:d.payoutRatio||'N/A'},
-  ].map(s=>`<div class="stat-line"><span class="stat-line-lbl">${s.l}</span><span class="stat-line-val">${s.v}</span></div>`).join('');
-
-  document.getElementById('div-growth').innerHTML = [
-    {l:'Consecutive Yrs',v:d.consecutive||0},
-    {l:'5Y Div Growth',v:d.growth5yr||'N/A'},
-    {l:'Div Frequency',v:d.history.length?'Quarterly':'None'},
-  ].map(s=>`<div class="stat-line"><span class="stat-line-lbl">${s.l}</span><span class="stat-line-val">${s.v}</span></div>`).join('');
-
-  if(d.history && d.history.length) {
-    const chJs = isLight?{bg:'#fff',grid:'#e2e8f0',text:'#475569'}:{bg:'#111827',grid:'#1a2a40',text:'#94a3b8'};
-    const labels = d.history.map(h=>h.ex.split(',')[0]).reverse();
-    const amounts = d.history.map(h=>parseFloat(h.amt.replace('$',''))).reverse();
-    divChartInst = new Chart(document.getElementById('div-chart'),{type:'bar',
-      data:{labels,datasets:[{label:'Dividend $',data:amounts,backgroundColor:'rgba(0,212,161,.5)',borderColor:'rgba(0,212,161,1)',borderWidth:1,borderRadius:3}]},
-      options:{responsive:true,maintainAspectRatio:false,
-        plugins:{legend:{labels:{color:chJs.text,font:{size:10}}}},
-        scales:{x:{ticks:{color:chJs.text,font:{size:9}},grid:{color:chJs.grid}},
-                y:{ticks:{color:chJs.text,font:{size:10},callback:v=>'$'+v.toFixed(2)},grid:{color:chJs.grid}}}}});
-
-    document.querySelector('#div-hist-tbl tbody').innerHTML = d.history.map(h=>`
-      <tr><td>${h.ex}</td><td style="color:var(--green);font-weight:600">${h.amt}</td><td>${h.pay}</td><td>${h.yld}</td></tr>`).join('');
-  } else {
-    document.getElementById('div-chart').parentElement.innerHTML = `<div style="display:flex;align-items:center;justify-content:center;height:180px;color:var(--text3);font-size:13px">${d.note||'No dividend history available.'}</div>`;
-    document.querySelector('#div-hist-tbl tbody').innerHTML = `<tr><td colspan="4" style="text-align:center;color:var(--text3);padding:20px">${d.note||'N/A'}</td></tr>`;
-  }
-}
-
-// ── CHART PERFORMANCE PANEL ───────────────────────
-function buildChartPanels(ticker) {
-  const d = STOCK_DETAIL_DATA[ticker] || STOCK_DETAIL_DATA['AAPL'];
-  const perf = d.perf || {};
-  document.getElementById('chart-perf-list').innerHTML = Object.entries(perf).map(([k,v])=>{
-    const up = v.startsWith('+');
-    return `<div class="stat-line"><span class="stat-line-lbl">${k}</span><span class="stat-line-val ${up?'up':'dn'}">${v}</span></div>`;
-  }).join('');
-
-  const sh = d.short || {};
-  document.getElementById('chart-short-data').innerHTML = [
-    {l:'Short % of Float',v:sh.shortPct||'N/A'},
-    {l:'Short Shares',v:sh.shortShares||'N/A'},
-    {l:'Days to Cover',v:sh.daysTocover||'N/A'},
-  ].map(s=>`<div class="stat-line"><span class="stat-line-lbl">${s.l}</span><span class="stat-line-val">${s.v}</span></div>`).join('');
+  setTimeout(drawStockChart, 50);
 }
 
 // ═══════════════════════════════════
