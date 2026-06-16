@@ -894,14 +894,14 @@ function checkPw(){
         <div>
           <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:8px">Forward EPS Estimates</div>
           <table class="tbl" id="fwd-eps-tbl">
-            <thead><tr><th>Period</th><th>Consensus</th><th>High</th><th>Low</th><th># Analysts</th><th>YoY Est.</th></tr></thead>
+            <thead><tr><th>Period</th><th>Consensus</th><th>High</th><th>Low</th><th># Analysts</th></tr></thead>
             <tbody></tbody>
           </table>
         </div>
         <div>
           <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:8px">Earnings History</div>
           <table class="tbl" id="earn-hist-tbl">
-            <thead><tr><th>Quarter</th><th>EPS Est</th><th>EPS Act</th><th>Surprise</th><th>EPS YoY</th><th>Rev Est</th><th>Rev Act</th><th>Rev YoY</th></tr></thead>
+            <thead><tr><th>Quarter</th><th>EPS Est</th><th>EPS Act</th><th>Surprise</th><th>Rev Est</th><th>Rev Act</th></tr></thead>
             <tbody></tbody>
           </table>
         </div>
@@ -928,18 +928,12 @@ function checkPw(){
           </table>
         </div>
       </div>
-      <!-- 3-year ownership trend -->
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:14px;margin-bottom:16px" id="own-trend-wrap">
-        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:10px">Ownership Trend — 3-Year History</div>
-        <div id="own-trend-content"></div>
-      </div>
-
       <!-- Institutions + Insiders -->
       <div class="grid2">
         <div>
-          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:8px">Top 10 Institutional Holders — 3 Year View</div>
+          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:8px">Top 10 Institutional Holders</div>
           <table class="tbl" id="inst-tbl">
-            <thead><tr><th>Institution</th><th id="inst-y0-hdr">FY2022</th><th id="inst-y1-hdr">FY2023</th><th id="inst-y2-hdr">FY2024</th><th>YoY Chg</th><th>% Float</th></tr></thead>
+            <thead><tr><th>Institution</th><th>Shares</th><th>% Float</th><th>Chg</th></tr></thead>
             <tbody></tbody>
           </table>
         </div>
@@ -1652,23 +1646,6 @@ const STOCK_DETAIL_DATA = {
         {name:'R. Taneja',title:'CFO',type:'Buy',shares:'25K',value:'$4.3M',date:'Apr 15 2024'},
         {name:'K. Musk',title:'Director',type:'Sell',shares:'50K',value:'$8.7M',date:'Mar 22 2024'},
       ],
-      // 3-year ownership trend
-      ownHistory:[
-        {yr:'FY2022',inst:47.1,insider:15.2,public:37.7},
-        {yr:'FY2023',inst:45.8,insider:13.8,public:40.4},
-        {yr:'FY2024',inst:44.3,insider:13.0,public:42.7},
-      ],
-      // Per-institution multi-year shares (M)
-      instHistory:[
-        {n:'Vanguard Group',   y22:'238M',y23:'252M',y24:'258M'},
-        {n:'BlackRock Inc.',   y22:'204M',y23:'196M',y24:'186M'},
-        {n:'State Street Corp',y22:'122M',y23:'116M',y24:'112M'},
-        {n:'Capital Group',   y22:'88M', y23:'102M',y24:'108M'},
-        {n:'Geode Capital',   y22:'68M', y23:'71M', y24:'74M'},
-        {n:'T. Rowe Price',   y22:'80M', y23:'74M', y24:'68M'},
-        {n:'Norges Bank',     y22:'48M', y23:'52M', y24:'54M'},
-        {n:'Fidelity Mgmt.',  y22:'44M', y23:'48M', y24:'52M'},
-      ],
     },
     dividends:{ yield:0, annualAmt:0, payoutRatio:'N/A', exDate:'N/A', payDate:'N/A',
       consecutive:0, growth5yr:'N/A', history:[], note:'Tesla does not currently pay a dividend.' },
@@ -1807,21 +1784,6 @@ const STOCK_DETAIL_DATA = {
         {name:'L. Maestri',title:'CFO',type:'Sell',shares:'240K',value:'$44.9M',date:'May 15 2024'},
         {name:'J. Williams',title:'COO',type:'Buy',shares:'12K',value:'$2.2M',date:'Apr 10 2024'},
         {name:'K. Adams',title:'CLO',type:'Sell',shares:'60K',value:'$11.2M',date:'Mar 28 2024'},
-      ],
-      ownHistory:[
-        {yr:'FY2022',inst:57.9,insider:2.8,public:39.3},
-        {yr:'FY2023',inst:58.8,insider:2.6,public:38.6},
-        {yr:'FY2024',inst:59.8,insider:2.4,public:37.8},
-      ],
-      instHistory:[
-        {n:'Vanguard Group',      y22:'1.28B',y23:'1.31B',y24:'1.34B'},
-        {n:'BlackRock Inc.',      y22:'1.08B',y23:'1.06B',y24:'1.05B'},
-        {n:'Berkshire Hathaway',  y22:'895M', y23:'905M', y24:'905M'},
-        {n:'State Street Corp',   y22:'578M', y23:'586M', y24:'590M'},
-        {n:'Fidelity Mgmt.',      y22:'302M', y23:'320M', y24:'340M'},
-        {n:'Geode Capital',       y22:'228M', y23:'238M', y24:'248M'},
-        {n:'Capital Group',       y22:'228M', y23:'218M', y24:'210M'},
-        {n:'T. Rowe Price',       y22:'172M', y23:'180M', y24:'188M'},
       ],
     },
     dividends:{ yield:0.54, annualAmt:1.00, payoutRatio:'16%', exDate:'Aug 9, 2024', payDate:'Aug 15, 2024',
@@ -2918,41 +2880,17 @@ function renderFinTable() {
   const t = currentStockTicker;
   const data = (FIN_DATA[t] || FIN_DATA['AAPL'])[finStatement][finPeriodMode];
   const { cols, rows } = data;
-
-  // Helpers
-  function parseN(v) { if(!v||v==='') return null; return parseFloat(v.replace(/,/g,'')); }
-  function yoyCell(v0str, v1str, isPct) {
-    const v0 = parseN(v0str), v1 = parseN(v1str);
-    if(v0===null || v1===null) return `<td style="border-left:2px solid var(--border2);color:var(--text3);text-align:center">—</td>`;
-    if(isPct) {
-      // percentage-point change
-      const diff = v0 - v1;
-      const up = diff >= 0;
-      return `<td style="border-left:2px solid var(--border2);text-align:center" class="${up?'up':'dn'}">
-        <strong>${up?'+':''}${diff.toFixed(1)}pp</strong></td>`;
-    }
-    if(v1 === 0) return `<td style="border-left:2px solid var(--border2);text-align:center;color:var(--text3)">N/M</td>`;
-    const pct = (v0 - v1) / Math.abs(v1) * 100;
-    const up = pct >= 0;
-    return `<td style="border-left:2px solid var(--border2);text-align:center;font-weight:700" class="${up?'up':'dn'}">
-      ${up?'▲':'▼'} ${up?'+':''}${pct.toFixed(1)}%</td>`;
-  }
-
-  const title = finStatement==='IS'?'Income Statement':finStatement==='BS'?'Balance Sheet':'Cash Flow';
-  let h = `<div class="fin-tbl-wrap"><table class="fin-tbl"><thead><tr>
-    <th>${title} (USD M)</th>
-    <th style="background:rgba(59,130,246,.1);color:var(--blue);border-left:2px solid var(--border2);min-width:80px;text-align:center">YoY %</th>`;
-  cols.forEach((c,i)=>h+=`<th style="${i===0?'background:rgba(59,130,246,.05)':''}">${c}</th>`);
+  let h = `<div class="fin-tbl-wrap"><table class="fin-tbl"><thead><tr><th>${finStatement==='IS'?'Income Statement':finStatement==='BS'?'Balance Sheet':'Cash Flow'} (USD M)</th>`;
+  cols.forEach(c=>h+=`<th>${c}</th>`);
   h += '</tr></thead><tbody>';
-
   rows.forEach(r=>{
-    if(r.sec){ h+=`<tr class="fin-section-hdr"><td colspan="${cols.length+2}">${r.label}</td></tr>`; return; }
+    if(r.sec){ h+=`<tr class="fin-section-hdr"><td colspan="${cols.length+1}">${r.label}</td></tr>`; return; }
     const isPct = r.label.includes('%');
-    const yoy = r.vals.length >= 2 ? yoyCell(r.vals[0], r.vals[1], isPct) : `<td style="border-left:2px solid var(--border2)"></td>`;
-    h += `<tr><td>${r.label}</td>${yoy}`;
-    r.vals.forEach((v,i)=>{
+    h += `<tr><td>${r.label}</td>`;
+    r.vals.forEach(v=>{
       const isNeg = v.startsWith('-');
-      h += `<td style="${i===0?'font-weight:600':''}" ${isNeg?'class="dn"':''}>${v}</td>`;
+      const isPos = !isNeg && !isPct && parseFloat(v.replace(/,/g,''))>0 && r.label.includes('Cash Flow');
+      h += `<td ${isNeg?'class="dn"':isPos?'class="up"':''}>${isPct?v:(v===''?'':v)}</td>`;
     });
     h += '</tr>';
   });
@@ -3063,109 +3001,47 @@ function buildTechnical(ticker) {
 let earnChartInst, revChartInst;
 function buildEarnings(ticker) {
   const d = (STOCK_DETAIL_DATA[ticker]||STOCK_DETAIL_DATA['AAPL']).earnings;
-  // history is newest-first; reverse for charts (oldest→newest)
   const hist = [...d.history].reverse();
 
   destroyChart(earnChartInst);
   destroyChart(revChartInst);
 
-  const labels  = hist.map(h=>h.q);
-  const epsEst  = hist.map(h=>h.epsEst);
-  const epsAct  = hist.map(h=>h.epsAct);
+  const labels = hist.map(h=>h.q);
+  const epsEst = hist.map(h=>h.epsEst);
+  const epsAct = hist.map(h=>h.epsAct);
   const chJs = isLight?{bg:'#f0f4f8',grid:'#e2e8f0',text:'#475569'}:{bg:'#111827',grid:'#1a2a40',text:'#94a3b8'};
 
-  // YoY growth % for EPS (compare index i to i-4 = same quarter prev year)
-  const epsYoY = epsAct.map((v,i)=> i<4 ? null : v!==0 ? ((v - epsAct[i-4]) / Math.abs(epsAct[i-4]) * 100) : null);
-  const epsYoYLine = epsYoY.map(v=>v===null?null:parseFloat(v.toFixed(1)));
-
-  earnChartInst = new Chart(document.getElementById('earnings-chart'),{
-    type:'bar',
-    data:{
-      labels,
-      datasets:[
-        {label:'Est.',data:epsEst,backgroundColor:'rgba(59,130,246,.35)',borderColor:'rgba(59,130,246,.7)',borderWidth:1,borderRadius:3,order:2},
-        {label:'Actual',data:epsAct,backgroundColor:epsAct.map((v,i)=>v>=epsEst[i]?'rgba(0,212,161,.65)':'rgba(255,77,106,.65)'),borderColor:epsAct.map((v,i)=>v>=epsEst[i]?'#00d4a1':'#ff4d6a'),borderWidth:1,borderRadius:3,order:2},
-        {label:'YoY Growth %',data:epsYoYLine,type:'line',yAxisID:'yGrowth',borderColor:'#f59e0b',backgroundColor:'rgba(245,158,11,.1)',borderWidth:2,pointRadius:3,pointBackgroundColor:'#f59e0b',tension:0.3,spanGaps:true,order:1},
-      ]
-    },
-    options:{responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{labels:{color:chJs.text,font:{size:10}}},
-        tooltip:{callbacks:{label:c=>c.datasetIndex===2?`YoY: ${c.parsed.y===null?'N/A':c.parsed.y.toFixed(1)+'%'}`:`${c.dataset.label}: $${c.parsed.y.toFixed(2)}`}}},
-      scales:{
-        x:{ticks:{color:chJs.text,font:{size:9}},grid:{color:chJs.grid}},
-        y:{ticks:{color:chJs.text,font:{size:10},callback:v=>'$'+v},grid:{color:chJs.grid},position:'left'},
-        yGrowth:{ticks:{color:'#f59e0b',font:{size:9},callback:v=>v+'%'},grid:{display:false},position:'right',title:{display:true,text:'YoY %',color:'#f59e0b',font:{size:9}}}
-      }
-    }
-  });
+  earnChartInst = new Chart(document.getElementById('earnings-chart'),{type:'bar',data:{
+    labels, datasets:[
+      {label:'Est.',data:epsEst,backgroundColor:'rgba(59,130,246,.4)',borderColor:'rgba(59,130,246,.8)',borderWidth:1,borderRadius:3},
+      {label:'Actual',data:epsAct,backgroundColor:epsAct.map((v,i)=>v>=epsEst[i]?'rgba(0,212,161,.6)':'rgba(255,77,106,.6)'),borderColor:epsAct.map((v,i)=>v>=epsEst[i]?'rgba(0,212,161,1)':'rgba(255,77,106,1)'),borderWidth:1,borderRadius:3},
+    ]},options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{labels:{color:chJs.text,font:{size:10}}},tooltip:{callbacks:{label:c=>`${c.dataset.label}: $${c.parsed.y.toFixed(2)}`}}},
+      scales:{x:{ticks:{color:chJs.text,font:{size:9}},grid:{color:chJs.grid}},y:{ticks:{color:chJs.text,font:{size:10},callback:v=>'$'+v},grid:{color:chJs.grid}}}}});
 
   const revEst = hist.map(h=>parseFloat(h.revEst.replace(/[\$B]/g,'')));
   const revAct = hist.map(h=>parseFloat(h.revAct.replace(/[\$B]/g,'')));
-  const revYoY = revAct.map((v,i)=> i<4 ? null : v!==0 ? ((v - revAct[i-4]) / Math.abs(revAct[i-4]) * 100) : null);
-  const revYoYLine = revYoY.map(v=>v===null?null:parseFloat(v.toFixed(1)));
+  revChartInst = new Chart(document.getElementById('revenue-chart'),{type:'bar',data:{
+    labels, datasets:[
+      {label:'Est. (B)',data:revEst,backgroundColor:'rgba(59,130,246,.4)',borderColor:'rgba(59,130,246,.8)',borderWidth:1,borderRadius:3},
+      {label:'Actual (B)',data:revAct,backgroundColor:revAct.map((v,i)=>v>=revEst[i]?'rgba(0,212,161,.6)':'rgba(255,77,106,.6)'),borderColor:revAct.map((v,i)=>v>=revEst[i]?'rgba(0,212,161,1)':'rgba(255,77,106,1)'),borderWidth:1,borderRadius:3},
+    ]},options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{labels:{color:chJs.text,font:{size:10}}}},
+      scales:{x:{ticks:{color:chJs.text,font:{size:9}},grid:{color:chJs.grid}},y:{ticks:{color:chJs.text,font:{size:10},callback:v=>'$'+v+'B'},grid:{color:chJs.grid}}}}});
 
-  revChartInst = new Chart(document.getElementById('revenue-chart'),{
-    type:'bar',
-    data:{
-      labels,
-      datasets:[
-        {label:'Est. ($B)',data:revEst,backgroundColor:'rgba(59,130,246,.35)',borderColor:'rgba(59,130,246,.7)',borderWidth:1,borderRadius:3,order:2},
-        {label:'Actual ($B)',data:revAct,backgroundColor:revAct.map((v,i)=>v>=revEst[i]?'rgba(0,212,161,.65)':'rgba(255,77,106,.65)'),borderColor:revAct.map((v,i)=>v>=revEst[i]?'#00d4a1':'#ff4d6a'),borderWidth:1,borderRadius:3,order:2},
-        {label:'YoY Growth %',data:revYoYLine,type:'line',yAxisID:'yGrowth',borderColor:'#8b5cf6',backgroundColor:'rgba(139,92,246,.1)',borderWidth:2,pointRadius:3,pointBackgroundColor:'#8b5cf6',tension:0.3,spanGaps:true,order:1},
-      ]
-    },
-    options:{responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{labels:{color:chJs.text,font:{size:10}}},
-        tooltip:{callbacks:{label:c=>c.datasetIndex===2?`YoY: ${c.parsed.y===null?'N/A':c.parsed.y.toFixed(1)+'%'}`:`${c.dataset.label}: $${c.parsed.y.toFixed(2)}B`}}},
-      scales:{
-        x:{ticks:{color:chJs.text,font:{size:9}},grid:{color:chJs.grid}},
-        y:{ticks:{color:chJs.text,font:{size:10},callback:v=>'$'+v+'B'},grid:{color:chJs.grid},position:'left'},
-        yGrowth:{ticks:{color:'#8b5cf6',font:{size:9},callback:v=>v+'%'},grid:{display:false},position:'right',title:{display:true,text:'YoY %',color:'#8b5cf6',font:{size:9}}}
-      }
-    }
-  });
+  // Forward estimates
+  document.querySelector('#fwd-eps-tbl tbody').innerHTML = d.fwdEps.map(f=>`
+    <tr><td>${f.period}</td><td style="font-weight:600">$${f.est.toFixed(2)}</td><td class="up">$${f.high.toFixed(2)}</td><td class="dn">$${f.low.toFixed(2)}</td><td>${f.analysts}</td></tr>`).join('');
 
-  // Forward estimates – add YoY growth vs most recent actual
-  const latestActEps = d.history[0] ? d.history[0].epsAct : null;
-  document.querySelector('#fwd-eps-tbl tbody').innerHTML = d.fwdEps.map((f,i)=>{
-    const base = i===0 && latestActEps ? latestActEps : null;
-    const growthHtml = base ? (()=>{
-      const g = ((f.est - base) / Math.abs(base) * 100);
-      return `<span class="${g>=0?'up':'dn'}">${g>=0?'+':''}${g.toFixed(1)}% YoY</span>`;
-    })() : '—';
-    return `<tr><td>${f.period}</td><td style="font-weight:600">$${f.est.toFixed(2)}</td><td class="up">$${f.high.toFixed(2)}</td><td class="dn">$${f.low.toFixed(2)}</td><td>${f.analysts}</td><td>${growthHtml}</td></tr>`;
-  }).join('');
-
-  // Earnings history table with YoY growth columns
-  // history is newest-first; compare [i] to [i+4] for same-Q YoY
-  document.querySelector('#earn-hist-tbl tbody').innerHTML = d.history.map((h,i)=>{
+  // History
+  document.querySelector('#earn-hist-tbl tbody').innerHTML = d.history.map(h=>{
     const beat = h.epsSurp >= 0;
-    // EPS YoY: compare this quarter EPS to same quarter prior year (4 quarters back)
-    let epsYoYHtml = '—', revYoYHtml = '—';
-    if(i + 4 < d.history.length) {
-      const prev = d.history[i+4];
-      if(prev.epsAct !== 0) {
-        const g = ((h.epsAct - prev.epsAct) / Math.abs(prev.epsAct) * 100);
-        epsYoYHtml = `<span class="${g>=0?'up':'dn'}" style="font-weight:600">${g>=0?'▲':'▼'} ${Math.abs(g).toFixed(1)}%</span>`;
-      }
-      const rA = parseFloat(h.revAct.replace(/[\$B]/g,''));
-      const rP = parseFloat(prev.revAct.replace(/[\$B]/g,''));
-      if(rP !== 0) {
-        const g = ((rA - rP) / Math.abs(rP) * 100);
-        revYoYHtml = `<span class="${g>=0?'up':'dn'}" style="font-weight:600">${g>=0?'▲':'▼'} ${Math.abs(g).toFixed(1)}%</span>`;
-      }
-    }
     return `<tr>
-      <td>${h.q}</td>
-      <td>$${h.epsEst.toFixed(2)}</td>
-      <td style="font-weight:700;color:${beat?'var(--green)':'var(--red)'}">${h.epsAct >= 0 ? '$' : '-$'}${Math.abs(h.epsAct).toFixed(2)}</td>
+      <td>${h.q}</td><td>$${h.epsEst.toFixed(2)}</td>
+      <td style="font-weight:600;color:${beat?'var(--green)':'var(--red)'}">${h.epsAct >= 0 ? '$' : '-$'}${Math.abs(h.epsAct).toFixed(2)}</td>
       <td><span class="${beat?'beat':'miss'}">${beat?'+':''}${h.epsSurp.toFixed(1)}%</span></td>
-      <td>${epsYoYHtml}</td>
-      <td>${h.revEst}</td>
-      <td>${h.revAct}</td>
-      <td>${revYoYHtml}</td>
-    </tr>`;
-  }).join('');
+      <td>${h.revEst}</td><td>${h.revAct}</td>
+    </tr>`;}).join('');
 }
 
 // ── OWNERSHIP TAB ─────────────────────────────────
@@ -3177,97 +3053,21 @@ function buildOwnership(ticker) {
   const chJs = isLight?{bg:'#ffffff',text:'#475569'}:{bg:'#111827',text:'#94a3b8'};
   ownDonutInst = new Chart(document.getElementById('own-donut'),{type:'doughnut',
     data:{labels:['Institutional','Insider','Public Float'],
-      datasets:[{data:[d.institutional,d.insider,d.public],
-        backgroundColor:['rgba(59,130,246,.7)','rgba(139,92,246,.7)','rgba(0,212,161,.7)'],
-        borderColor:chJs.bg,borderWidth:2}]},
-    options:{responsive:true,maintainAspectRatio:true,
-      plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>`${c.label}: ${c.parsed.toFixed(1)}%`}}}}});
+      datasets:[{data:[d.institutional,d.insider,d.public],backgroundColor:['rgba(59,130,246,.7)','rgba(139,92,246,.7)','rgba(0,212,161,.7)'],borderColor:chJs.bg,borderWidth:2}]},
+    options:{responsive:true,maintainAspectRatio:true,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>`${c.label}: ${c.parsed.toFixed(1)}%`}}}}});
 
   const cols = ['#3b82f6','#8b5cf6','#00d4a1'];
-  const lbls = ['Institutional','Insider','Public Float'];
+  const labels = ['Institutional','Insider','Public Float'];
   const vals = [d.institutional,d.insider,d.public];
-  document.getElementById('own-legend').innerHTML = lbls.map((l,i)=>`
+  document.getElementById('own-legend').innerHTML = labels.map((l,i)=>`
     <div class="own-leg-item"><div class="own-leg-dot" style="background:${cols[i]}"></div><strong>${vals[i].toFixed(1)}%</strong> ${l}</div>`).join('');
+
   document.getElementById('own-stats').innerHTML = d.instStats.map(s=>`
     <div class="stat"><div class="stat-label">${s.l}</div><div class="stat-val">${s.v}</div></div>`).join('');
 
-  // ── 3-YEAR OWNERSHIP TREND ──────────────────────
-  const oh = d.ownHistory || [];
-  if(oh.length) {
-    function deltaArrow(curr, prev) {
-      const diff = (curr - prev).toFixed(1);
-      const up = diff >= 0;
-      return `<span class="${up?'up':'dn'}">${up?'▲':'▼'} ${Math.abs(diff)}pp</span>`;
-    }
-    let trendHtml = `<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:12px">`;
-    // Inst, Insider, Public for each year
-    ['Institutional','Insider','Public Float'].forEach((cat,ci) => {
-      const keys = ['inst','insider','public'];
-      const catCol = ['#3b82f6','#8b5cf6','#00d4a1'][ci];
-      trendHtml += `<div style="background:var(--bg4);border-radius:6px;padding:10px">
-        <div style="font-size:10px;color:var(--text3);margin-bottom:6px;font-weight:600">${cat}</div>`;
-      oh.forEach((row,ri) => {
-        const v = row[keys[ci]];
-        const prevV = ri>0 ? oh[ri-1][keys[ci]] : null;
-        const yoyHtml = prevV!==null ? deltaArrow(v, prevV) : '';
-        trendHtml += `<div style="display:flex;justify-content:space-between;align-items:center;padding:3px 0;border-bottom:${ri<oh.length-1?'1px solid var(--border)':'none'}">
-          <span style="font-size:10px;color:var(--text3)">${row.yr}</span>
-          <span style="font-size:13px;font-weight:700;color:${catCol}">${v.toFixed(1)}%</span>
-          <span style="font-size:10px">${yoyHtml}</span>
-        </div>`;
-      });
-      trendHtml += `</div>`;
-    });
-    trendHtml += `</div>`;
-
-    // Stacked bar timeline
-    trendHtml += `<div style="font-size:10px;color:var(--text3);margin-bottom:4px">Ownership composition over time</div>`;
-    oh.forEach(row => {
-      trendHtml += `<div style="margin-bottom:6px">
-        <div style="display:flex;justify-content:space-between;font-size:10px;color:var(--text3);margin-bottom:3px">
-          <span>${row.yr}</span>
-          <span>Inst ${row.inst}% · Insider ${row.insider}% · Public ${row.public}%</span>
-        </div>
-        <div style="display:flex;height:10px;border-radius:4px;overflow:hidden;background:var(--bg4)">
-          <div style="width:${row.inst}%;background:rgba(59,130,246,.7)"></div>
-          <div style="width:${row.insider}%;background:rgba(139,92,246,.7)"></div>
-          <div style="width:${row.public}%;background:rgba(0,212,161,.5)"></div>
-        </div>
-      </div>`;
-    });
-    document.getElementById('own-trend-content').innerHTML = trendHtml;
-  }
-
-  // ── INSTITUTIONS — MULTI-YEAR TABLE ─────────────
-  const ih = d.instHistory || [];
-  if(ih.length) {
-    // Update table headers with years from ownHistory
-    const years = oh.length ? oh.map(r=>r.yr) : ['FY2022','FY2023','FY2024'];
-    document.getElementById('inst-y0-hdr').textContent = years[0]||'FY2022';
-    document.getElementById('inst-y1-hdr').textContent = years[1]||'FY2023';
-    document.getElementById('inst-y2-hdr').textContent = years[2]||'FY2024';
-
-    document.querySelector('#inst-tbl tbody').innerHTML = ih.map(row=>{
-      // compute YoY from y23→y24: parse share count
-      function parseShares(s){ return parseFloat(s.replace(/[MBK]/gi,'')) * (s.includes('B')?1000:s.includes('K')?0.001:1); }
-      const n23 = parseShares(row.y23||'0'), n24 = parseShares(row.y24||'0');
-      const yoyPct = n23>0 ? ((n24-n23)/n23*100) : 0;
-      const yoyUp = yoyPct >= 0;
-      const pctFloat = d.institutions.find(i=>i.n===row.n);
-      return `<tr>
-        <td>${row.n}</td>
-        <td style="color:var(--text3)">${row.y22||'—'}</td>
-        <td style="color:var(--text2)">${row.y23||'—'}</td>
-        <td style="font-weight:700">${row.y24||'—'}</td>
-        <td class="${yoyUp?'up':'dn'}" style="font-weight:700">${yoyUp?'▲':'▼'} ${Math.abs(yoyPct).toFixed(1)}%</td>
-        <td style="color:var(--text2)">${pctFloat?pctFloat.pct:'—'}</td>
-      </tr>`;
-    }).join('');
-  } else {
-    // Fallback to original simple table
-    document.querySelector('#inst-tbl tbody').innerHTML = d.institutions.map(i=>`
-      <tr><td>${i.n}</td><td colspan="3">${i.shares}</td><td class="${i.cls}">${i.chg}</td><td>${i.pct}</td></tr>`).join('');
-  }
+  // Institutions
+  document.querySelector('#inst-tbl tbody').innerHTML = d.institutions.map(i=>`
+    <tr><td>${i.n}</td><td>${i.shares}</td><td>${i.pct}</td><td class="${i.cls}">${i.chg}</td></tr>`).join('');
 
   // Hedge Funds
   document.querySelector('#hf-tbl tbody').innerHTML = d.hedgeFunds.map(h=>`
